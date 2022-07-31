@@ -1,3 +1,5 @@
+import { InsightOfDaysModule } from './modules/insight-of-days/insight-of-days.module';
+import { PostsModule } from './modules/posts/posts.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,7 +10,14 @@ import { AboutModule } from './modules/about/about.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HomeModule, AboutModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HomeModule,
+    AboutModule,
+    PostsModule,
+    InsightOfDaysModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
