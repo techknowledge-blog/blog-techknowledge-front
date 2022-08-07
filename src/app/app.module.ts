@@ -1,18 +1,24 @@
+import { InsightOfDaysModule } from './modules/insight-of-days/insight-of-days.module';
+import { PostsModule } from './modules/posts/posts.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeModule } from './modules/home/home.module';
+import { AboutModule } from './modules/about/about.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule,
+    AboutModule,
+    PostsModule,
+    InsightOfDaysModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
