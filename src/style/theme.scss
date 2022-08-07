@@ -2,6 +2,12 @@
 @use "@angular/material" as mat;
 @use "./variables" as vars;
 
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(../assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
 $primary-colors: (
   main: vars.$primary-dark,
   lighter: vars.$primary-white,
@@ -38,10 +44,10 @@ $primary-theme: mat.define-light-theme(
   )
 );
 
-$raleway: "Raleway", "Helvetica Neue", sans-serif;
+$poppins: "Poppins", "Helvetica Neue", sans-serif;
 
 $typography: mat.define-typography-config(
-  $font-family: $raleway,
+  $font-family: $poppins,
 );
 
 @include mat.core($typography);
