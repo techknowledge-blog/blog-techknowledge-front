@@ -1,0 +1,50 @@
+@use "/src/style/variables.scss" as vars;
+
+header {
+  padding: 1.5em 3rem;
+
+  .title h2 {
+    color: vars.$white;
+  }
+
+  .description {
+    margin-top: 16px;
+  }
+
+  .description p {
+    width: 40%;
+
+    color: vars.$white;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .button-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 180px;
+    height: 40px;
+    margin-top: 32px;
+    
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: vars.$white;
+
+    background-color: vars.$primary-black;
+  }
+
+  .arrow-icon {
+    width: 32px;
+    height: 24px;
+    margin-left: 20px;
+
+    border-radius: 4px;
+
+    background-color: vars.$primary-dark;
+  }
+}
