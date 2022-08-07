@@ -1,0 +1,49 @@
+@use "~@angular/material/theming";
+@use "@angular/material" as mat;
+@use "./variables" as vars;
+
+$primary-colors: (
+  main: vars.$primary-dark,
+  lighter: vars.$primary-white,
+  darker: vars.$primary-black,
+  200: vars.$primary-medium,
+  contrast: (
+    main: vars.$white,
+    lighter: vars.$white,
+    darker: vars.$white-black,
+  ),
+);
+
+$accent-colors: (
+  main: vars.$white,
+  lighter: vars.$white,
+  darker: vars.$white-black,
+  200: vars.$grey-200,
+  contrast: (
+    main: vars.$primary-dark,
+    lighter: vars.$primary-white,
+    darker: vars.$primary-black,
+  ),
+);
+
+$primary-palette: mat.define-palette($primary-colors, main, lighter, darker);
+$accent-palette: mat.define-palette($accent-colors, main, lighter, darker);
+
+$primary-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $primary-palette,
+      accent: $accent-palette,
+    ),
+  )
+);
+
+$raleway: "Raleway", "Helvetica Neue", sans-serif;
+
+$typography: mat.define-typography-config(
+  $font-family: $raleway,
+);
+
+@include mat.core($typography);
+
+@include mat.all-component-themes($primary-theme);
