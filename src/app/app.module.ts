@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { AboutModule } from './modules/about/about.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './modules/shared/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
