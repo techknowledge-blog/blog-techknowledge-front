@@ -3,12 +3,17 @@
 
 /* You can add global styles to this file, and also import other style files */
 
-html,
+html {
+  // Set the font size to 62.5% so that 1rem = 10px
+  font-size: 62.5%;
+  height: 100%;
+}
+
 body {
   height: 100%;
 }
 body {
-  background-color: vars.$primary-dark;
+  background-color: vars.$white-medium;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
