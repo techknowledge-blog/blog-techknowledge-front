@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
-  public isActive: boolean = true;
+  public isHovering: boolean = false;
 
   constructor() {}
 

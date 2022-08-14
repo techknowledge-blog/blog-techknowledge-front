@@ -1,9 +1,14 @@
 <mat-card
-  (mouseover)="isActive = true"
-  (mouseout)="isActive = false"
-  [class.mat-elevation-z8]="isActive"
+  (mouseover)="isHovering = true"
+  (mouseout)="isHovering = false"
+  [class.mat-elevation-z8]="isHovering"
+  [class.mat-elevation-z2]="!isHovering"
   class="example-card"
 >
+  <img
+    src="../../../../../assets/img/planning.jpeg"
+    alt="Photo of a Shiba Inu"
+  />
   <mat-card-title>Por que esse blog existe?</mat-card-title>
   <mat-card-subtitle>História do TechKnowledge</mat-card-subtitle>
   <mat-card-content>

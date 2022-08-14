@@ -1,13 +1,38 @@
 @use "../../../../../style/variables.scss" as *;
 
+mat-divider {
+  margin: 6.4rem 0;
+}
+
 mat-card {
   margin: 1.6rem;
-  padding: 2.8rem;
+  padding: 0;
   cursor: pointer;
+  background-color: $white-medium;
+  padding-bottom: 2.4rem;
 
-  button {
-    background-color: $dark-medium;
-    color: $white;
-    font-weight: bold;
+  mat-card-content,
+  mat-card-title,
+  mat-card-subtitle,
+  mat-card-actions {
+    padding: 0 2.4rem;
+  }
+
+  mat-card-title {
+    margin-top: 1.6rem;
+  }
+
+  img {
+    width: 100%;
+    height: 23.2rem;
+    object-fit: cover;
+  }
+
+  mat-card-actions {
+    button {
+      background-color: $dark-medium;
+      color: $white;
+      font-weight: bold;
+    }
   }
 }
