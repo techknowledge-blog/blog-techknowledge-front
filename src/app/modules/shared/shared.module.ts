@@ -1,3 +1,4 @@
+import { MatDividerModule } from '@angular/material/divider';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -15,7 +16,13 @@ import { DividerComponent } from './components/divider/divider.component';
     CardComponent,
     DividerComponent,
   ],
-  imports: [CommonModule, RouterModule, MatCardModule, MatButtonModule],
-  exports: [NavbarComponent, HeaderComponent, CardComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatCardModule,
+    MatButtonModule,
+    MatDividerModule,
+  ],
+  exports: [NavbarComponent, HeaderComponent, CardComponent, DividerComponent],
 })
 export class SharedModule {}
