@@ -1,0 +1,8 @@
+version: "3"
+services:
+  app:
+    image: "blog-techknowledge-front"
+    ports:
+      - "4200:4200"
+    volumes:
+      - ".:/usr/app"

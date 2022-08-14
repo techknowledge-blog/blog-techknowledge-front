@@ -1,0 +1,30 @@
+@use "../../../../../style/variables.scss" as *;
+
+nav {
+  padding: 0.16rem 0;
+  display: flex;
+  justify-content: center;
+  .menu-options {
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: $dark-dark;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 1.6rem 2rem;
+        transition: 0.3s;
+
+        &:hover {
+          color: $dark-medium;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
