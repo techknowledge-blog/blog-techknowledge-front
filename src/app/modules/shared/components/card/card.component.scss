@@ -1,0 +1,13 @@
+@use "../../../../../style/variables.scss" as *;
+
+mat-card {
+  margin: 1.6rem;
+  padding: 2.8rem;
+  cursor: pointer;
+
+  button {
+    background-color: $dark-medium;
+    color: $white;
+    font-weight: bold;
+  }
+}

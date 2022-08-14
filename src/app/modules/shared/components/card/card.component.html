@@ -1,0 +1,19 @@
+<mat-card
+  (mouseover)="isActive = true"
+  (mouseout)="isActive = false"
+  [class.mat-elevation-z8]="isActive"
+  class="example-card"
+>
+  <mat-card-title>Por que esse blog existe?</mat-card-title>
+  <mat-card-subtitle>História do TechKnowledge</mat-card-subtitle>
+  <mat-card-content>
+    <p>
+      Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a
+      finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e
+      falar um pouco da motivação por trás do TechKnowledge!
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button>Ver Post</button>
+  </mat-card-actions>
+</mat-card>
