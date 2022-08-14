@@ -2,6 +2,8 @@
 
 header {
   padding: 1.5em 3rem;
+  margin: 0 auto;
+  width: 80%;
 
   .title {
     display: flex;
@@ -14,15 +16,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     margin-top: 32px;
-  }
 
-  .description p {
-    width: 40%;
-
-    color: #000;
-    text-align: center;
-    line-height: 20px;
+    p {
+      color: #000;
+      text-align: justify;
+      line-height: 20px;
+    }
   }
 }
