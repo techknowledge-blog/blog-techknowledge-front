@@ -2,9 +2,9 @@
 
 nav {
   padding: 0.16rem 0;
-
+  display: flex;
+  justify-content: center;
   .menu-options {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 
