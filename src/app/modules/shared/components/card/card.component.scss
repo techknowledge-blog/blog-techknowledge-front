@@ -5,7 +5,7 @@ mat-divider {
 }
 
 mat-card {
-  margin: 1.6rem;
+  margin: 1.6rem 5.6rem;
   padding: 0;
   cursor: pointer;
   background-color: $white-medium;
@@ -34,6 +34,12 @@ mat-card {
       color: $white;
       font-weight: bold;
     }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  mat-card {
+    margin: 1.6rem 3.2rem;
   }
 }
 
