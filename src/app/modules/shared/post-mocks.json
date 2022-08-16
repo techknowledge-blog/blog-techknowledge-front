@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Por que esse blog existe?",
+      "category": {
+        "id": 1,
+        "name": "História do Techknowledge",
+        "slug": "historia-do-techknowledge",
+        "created_at": "2020-05-01T00:00:00.000Z",
+        "updated_at": "2020-05-01T00:00:00.000Z"
+      },
+      "subtitle": "A origem desse blog",
+      "content": "<h1>Por que esse blog existe?</h1><h2>A origem desse blog</h2><p>  Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!</p><p>  O TechKnowledge é um blog criado para apresentar aos desenvolvedores  tecnologias que podem ser úteis para o desenvolvimento de software.</p><p>  Mikael e Letícia são dois desenvolvedores de software e estudantes de  Sistemas da Informação. Eles estão criando esse blog para compartilhar  suas experiências, dificuldades e a forma que chegaram à resolução de  problemas do dia-a-dia.</p>",
+      "slug": "por-que-esse-blog-existe",
+      "created_at": "2020-05-01T00:00:00.000Z",
+      "updated_at": "2020-05-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Por que esse blog existe?",
+      "category": {
+        "id": 1,
+        "name": "História do Techknowledge",
+        "slug": "historia-do-techknowledge",
+        "created_at": "2020-05-01T00:00:00.000Z",
+        "updated_at": "2020-05-01T00:00:00.000Z"
+      },
+      "subtitle": "A origem desse blog",
+      "content": "<h1>Por que esse blog existe?</h1><h2>A origem desse blog</h2><p>  Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!</p><p>  O TechKnowledge é um blog criado para apresentar aos desenvolvedores  tecnologias que podem ser úteis para o desenvolvimento de software.</p><p>  Mikael e Letícia são dois desenvolvedores de software e estudantes de  Sistemas da Informação. Eles estão criando esse blog para compartilhar  suas experiências, dificuldades e a forma que chegaram à resolução de  problemas do dia-a-dia.</p>",
+      "slug": "por-que-esse-blog-existe",
+      "created_at": "2020-05-01T00:00:00.000Z",
+      "updated_at": "2020-05-01T00:00:00.000Z"
+    }
+  ]
+}
