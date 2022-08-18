@@ -8,10 +8,4 @@ import { Observable } from 'rxjs';
 })
 export class PostsService {
   constructor(private http: HttpClient) {}
-
-  private API_URL = 'http://localhost:3000';
-
-  getFeaturedPosts(): Observable<IPost[]> {
-    return this.http.get<IPost[]>(this.API_URL + '/posts');
-  }
 }
