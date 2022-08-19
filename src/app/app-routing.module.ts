@@ -5,28 +5,26 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./modules/home-screen/home.module').then(
-        (module) => module.HomeModule
-      ),
+      import('./modules/home/home.module').then((module) => module.HomeModule),
   },
   {
     path: 'sobre',
     loadChildren: () =>
-      import('./modules/about-screen/about.module').then(
+      import('./modules/about/about.module').then(
         (module) => module.AboutModule
       ),
   },
   {
     path: 'posts',
     loadChildren: () =>
-      import('./modules/posts-screen/posts-screen.module').then(
-        (module) => module.PostsScreenModule
+      import('./modules/posts/posts.module').then(
+        (module) => module.PostsModule
       ),
   },
   {
     path: 'insight-of-days',
     loadChildren: () =>
-      import('./modules/insight-of-days-screen/insight-of-days.module').then(
+      import('./modules/insight-of-days/insight-of-days.module').then(
         (module) => module.InsightOfDaysModule
       ),
   },

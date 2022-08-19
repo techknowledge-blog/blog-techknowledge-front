@@ -4,19 +4,13 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
-import { CardComponent } from './components/posts-card-list/posts-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { DividerComponent } from './components/divider/divider.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    HeaderComponent,
-    CardComponent,
-    DividerComponent,
-  ],
+  declarations: [NavbarComponent, HeaderComponent, DividerComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -28,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     NavbarComponent,
     HeaderComponent,
-    CardComponent,
     DividerComponent,
     HttpClientModule,
   ],
