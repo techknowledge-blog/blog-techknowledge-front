@@ -13,7 +13,7 @@
       "subtitle": "A origem desse blog",
       "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
       "previewContent": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-      "slug": "por-que-esse-blog-existe",
+      "slug": "quem-e-letícia",
       "created_at": "2020-05-01T00:00:00.000Z",
       "updated_at": "2020-05-01T00:00:00.000Z"
     },
@@ -47,7 +47,7 @@
       "subtitle": "A origem desse blog",
       "content": "<p>Então... meu nome é Mikael Ribeiro Simões, tenho 20 anos e sou Desenvolvedor Full Stack</p>",
       "previewContent": "<p>Então... meu nome é Mikael Ribeiro Simões, tenho 20 anos e sou Desenvolvedor Full Stack</p>",
-      "slug": "por-que-esse-blog-existe",
+      "slug": "quem-e-mikael",
       "created_at": "2020-05-01T00:00:00.000Z",
       "updated_at": "2020-05-01T00:00:00.000Z"
     }
