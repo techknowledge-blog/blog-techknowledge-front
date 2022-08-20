@@ -1,0 +1,16 @@
+<mat-card
+  (mouseover)="isHovering = true"
+  (mouseout)="isHovering = false"
+  [class.mat-elevation-z8]="isHovering"
+  [class.mat-elevation-z2]="!isHovering"
+  class="example-card"
+>
+  <img
+    src="../../../../../assets/img/planning.jpeg"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-title>{{ post.title }}</mat-card-title>
+  <mat-card-subtitle>{{ post.subtitle }}</mat-card-subtitle>
+  <!-- <mat-card-content [innerHTML]="post.content"> </mat-card-content> -->
+  <mat-card-content [innerHtml]="post.content"></mat-card-content>
+</mat-card>
