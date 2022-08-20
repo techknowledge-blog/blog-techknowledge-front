@@ -4,6 +4,7 @@ export default interface IPost {
   category: any;
   subtitle: string;
   content: string;
+  previewContent: string;
   slug: string;
   createdAt: string;
   updatedAt: string;
