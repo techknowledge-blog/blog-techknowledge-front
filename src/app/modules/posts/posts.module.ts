@@ -1,3 +1,4 @@
+import { PostsService } from './posts.service';
 import { PostsRoutingModule } from './posts-routing.module';
 import { PostsCardRenderComponent } from './components/posts-card-render/posts-card-render.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,7 @@ import { PostsPageComponent } from './components/posts-page/posts-page.component
     SinglePostPageComponent,
     PostsPageComponent,
   ],
+  providers: [PostsService],
   imports: [CommonModule, SharedModule, PostsRoutingModule],
   exports: [PostsComponent, PostCardComponent, PostsCardRenderComponent],
 })

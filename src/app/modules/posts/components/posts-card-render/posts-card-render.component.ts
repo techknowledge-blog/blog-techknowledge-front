@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { PostsService } from './../../posts.service';
 import { Component, OnInit } from '@angular/core';
 import IPost from '../../interfaces/post.interface';
 
@@ -8,9 +8,7 @@ import IPost from '../../interfaces/post.interface';
   styleUrls: ['./posts-card-render.component.scss'],
 })
 export class PostsCardRenderComponent implements OnInit {
-  constructor(private http: HttpClient) {}
-
-  private API_URL = 'http://localhost:3000';
+  constructor(private postsService: PostsService) {}
 
   public posts: IPost[] = [];
 
@@ -19,10 +17,8 @@ export class PostsCardRenderComponent implements OnInit {
   }
 
   getFeaturedPosts(): void {
-    this.http
-      .get<IPost[]>(this.API_URL + '/posts')
-      .subscribe((posts: IPost[]) => {
-        this.posts = posts;
-      });
+    this.postsService
+      .getFeaturedPosts()
+      .subscribe((posts: IPost[]) => (this.posts = posts));
   }
 }
