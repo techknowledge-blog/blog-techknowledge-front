@@ -16,8 +16,6 @@ export class PostsCardRenderComponent implements OnInit {
 
   ngOnInit(): void {
     this.getFeaturedPosts();
-
-    console.log(this.posts.length);
   }
 
   getFeaturedPosts(): void {
