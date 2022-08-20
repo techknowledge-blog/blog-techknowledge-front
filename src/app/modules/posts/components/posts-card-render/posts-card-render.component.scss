@@ -1,0 +1,19 @@
+div.main {
+  display: flex;
+  justify-content: space-between;
+
+  app-card {
+    flex: 1;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  div.main {
+    flex-direction: column;
+
+    app-card {
+      display: inline-block;
+    }
+  }
+}
