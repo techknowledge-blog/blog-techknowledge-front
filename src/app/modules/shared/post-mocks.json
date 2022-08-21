@@ -12,7 +12,8 @@
       },
       "subtitle": "A origem desse blog",
       "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-      "slug": "por-que-esse-blog-existe",
+      "previewContent": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+      "slug": "quem-e-leticia",
       "created_at": "2020-05-01T00:00:00.000Z",
       "updated_at": "2020-05-01T00:00:00.000Z"
     },
@@ -27,6 +28,7 @@
         "updated_at": "2020-05-01T00:00:00.000Z"
       },
       "subtitle": "A origem desse blog",
+      "previewContent": "<p>Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!</p><p>  O TechKnowledge é um blog criado para apresentar aos desenvolvedores  tecnologias que podem ser úteis para o desenvolvimento de software.</p>",
       "content": "<p>Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!</p><p>  O TechKnowledge é um blog criado para apresentar aos desenvolvedores  tecnologias que podem ser úteis para o desenvolvimento de software.</p>",
       "slug": "por-que-esse-blog-existe",
       "created_at": "2020-05-01T00:00:00.000Z",
@@ -44,7 +46,8 @@
       },
       "subtitle": "A origem desse blog",
       "content": "<p>Então... meu nome é Mikael Ribeiro Simões, tenho 20 anos e sou Desenvolvedor Full Stack</p>",
-      "slug": "por-que-esse-blog-existe",
+      "previewContent": "<p>Então... meu nome é Mikael Ribeiro Simões, tenho 20 anos e sou Desenvolvedor Full Stack</p>",
+      "slug": "quem-e-mikael",
       "created_at": "2020-05-01T00:00:00.000Z",
       "updated_at": "2020-05-01T00:00:00.000Z"
     }
