@@ -1,5 +1,5 @@
 <mat-card
-  routerLink="/posts/{{ post.slug }}"
+  [routerLink]="['/posts/', post.slug]"
   (mouseover)="isHovering = true"
   (mouseout)="isHovering = false"
   [class.mat-elevation-z8]="isHovering"

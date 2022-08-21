@@ -1,4 +1,8 @@
+import { PostsService } from './../../posts.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
+import IPost from '../../interfaces/post.interface';
 
 @Component({
   selector: 'app-single-post-page',
@@ -6,7 +10,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-post-page.component.scss'],
 })
 export class SinglePostPageComponent implements OnInit {
-  constructor() {}
+  constructor(
+    private route: ActivatedRoute,
+    private postsService: PostsService
+  ) {}
 
-  ngOnInit(): void {}
+  public slug!: string;
+  public post: IPost | undefined;
+  private subscription!: Subscription;
+
+  ngOnInit(): void {
+    this.getSlugByRoute();
+    this.getPostBySlug();
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+
+  getSlugByRoute(): void {
+    this.subscription = this.route.params.subscribe((params: any) => {
+      this.slug = params['slug'];
+      console.log(this.slug);
+    });
+  }
+
+  getPostBySlug(): void {
+    this.postsService.getPostBySlug(this.slug).subscribe((posts: IPost[]) => {
+      this.post = posts[0];
+      console.log(this.post);
+    });
+  }
 }
