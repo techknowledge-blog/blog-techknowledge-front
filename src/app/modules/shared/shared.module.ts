@@ -8,9 +8,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { DividerComponent } from './components/divider/divider.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [NavbarComponent, HeaderComponent, DividerComponent],
+  declarations: [NavbarComponent, HeaderComponent, DividerComponent, FooterComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     DividerComponent,
     HttpClientModule,
+    FooterComponent,
     MatCardModule,
     MatCardModule,
     MatButtonModule,
