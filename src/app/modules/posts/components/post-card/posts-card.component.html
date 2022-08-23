@@ -11,6 +11,6 @@
     alt="Photo of a Shiba Inu"
   />
   <mat-card-title>{{ post.title }}</mat-card-title>
-  <mat-card-subtitle>{{ post.subtitle }}</mat-card-subtitle>
+  <mat-card-subtitle>{{ post.category.name }}</mat-card-subtitle>
   <mat-card-content [innerHtml]="post.previewContent"></mat-card-content>
 </mat-card>

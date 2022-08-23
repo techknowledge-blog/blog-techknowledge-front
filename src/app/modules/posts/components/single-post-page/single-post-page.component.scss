@@ -1,16 +1,33 @@
+@use "../../../../../style/variables.scss" as *;
+
 main {
   width: 80%;
   margin: 0 auto;
 
   article.post-article {
     padding: 6.4rem 0;
-    background-color: yellow;
 
     header {
-      h1,
-      h2 {
-        font-weight: 900;
+      h1 {
+        font-family: $poppins-bold;
+        color: $grey-500;
       }
+
+      h1 {
+        font-size: 3.2rem;
+        margin-bottom: 1.6rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $grey-500;
+      }
+    }
+
+    div.post-content {
+      font-family: $roboto-regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
     }
   }
 }
