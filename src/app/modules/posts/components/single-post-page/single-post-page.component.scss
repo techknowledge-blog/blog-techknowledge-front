@@ -1,0 +1,16 @@
+main {
+  width: 80%;
+  margin: 0 auto;
+
+  article.post-article {
+    padding: 6.4rem 0;
+    background-color: yellow;
+
+    header {
+      h1,
+      h2 {
+        font-weight: 900;
+      }
+    }
+  }
+}

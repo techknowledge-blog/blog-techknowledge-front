@@ -1,2 +1,9 @@
-<p>single-post-page works!</p>
-<p>{{ post?.id }}</p>
+<main>
+  <article class="post-article">
+    <header>
+      <h1>{{ post?.title }}</h1>
+      <h2>{{ post?.subtitle }}</h2>
+    </header>
+    <div class="post-content" [innerHTML]="post?.content"></div>
+  </article>
+</main>
