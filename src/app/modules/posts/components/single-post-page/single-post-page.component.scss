@@ -1,7 +1,7 @@
 @use "../../../../../style/variables.scss" as *;
 
 main {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 
   article.post-article {
@@ -11,9 +11,6 @@ main {
       h1 {
         font-family: $poppins-bold;
         color: $grey-500;
-      }
-
-      h1 {
         font-size: 3.2rem;
         margin-bottom: 1.6rem;
       }
@@ -26,8 +23,35 @@ main {
 
     div.post-content {
       font-family: $roboto-regular;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       line-height: 2.4rem;
+      color: $grey-700;
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+    article.post-article {
+      header {
+        h1 {
+          font-size: 2.4rem;
+          margin-bottom: 1.6rem;
+        }
+      }
     }
   }
 }
