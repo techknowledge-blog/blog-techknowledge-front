@@ -8,24 +8,18 @@
   padding: 0;
 }
 
-html {
-  // Set the font size to 62.5% so that 1rem = 10px
-  font-size: 62.5%;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  background-color: vars.$white-medium;
-  margin: 0;
-  font-family: Poppins, sans-serif;
-}
-
 html,
 body {
   height: 100%;
 }
+
+html {
+  // Set the font size to 62.5% so that 1rem = 10px
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
+  background-color: vars.$white-medium;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
