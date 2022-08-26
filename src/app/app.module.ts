@@ -1,4 +1,3 @@
-import { SharedModule } from './modules/shared/shared.module';
 import { InsightOfDaysModule } from './modules/insight-of-days/insight-of-days.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { AboutModule } from './modules/about/about.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeModule,
     AboutModule,
     PostsModule,
+    SharedModule,
     InsightOfDaysModule,
     BrowserAnimationsModule,
     SharedModule,
