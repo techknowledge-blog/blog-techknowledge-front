@@ -1,5 +1,5 @@
 import { PostsService } from './../../posts.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import IPost from '../../interfaces/post.interface';
@@ -8,6 +8,7 @@ import IPost from '../../interfaces/post.interface';
   selector: 'app-single-post-page',
   templateUrl: './single-post-page.component.html',
   styleUrls: ['./single-post-page.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class SinglePostPageComponent implements OnInit {
   constructor(
