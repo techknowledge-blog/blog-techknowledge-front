@@ -1,0 +1,20 @@
+@use "../../../../../style/variables.scss" as *;
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+  min-height: 72vh;
+  img {
+    width: 32rem;
+    height: 32rem;
+  }
+  
+  p {
+    font-family: $poppins-regular;
+    font-size: 4rem;
+    color: rgba($color: #000000, $alpha: 0.4);
+  }
+}
