@@ -6,3 +6,9 @@ services:
     build: .
     ports:
       - "8081:80"
+
+  # json-server:
+  #   image: williamyeh/json-server
+  #   command: -H 0.0.0.0 -p 3000 -w src/app/modules/shared/mocks/post-mocks.json
+  #   ports:
+  #     - "3000:3000"
