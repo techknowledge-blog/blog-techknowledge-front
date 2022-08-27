@@ -1,3 +1,4 @@
+import { mockedPosts } from './../../../shared/mocks/post-mocks';
 import { PostsService } from './../../posts.service';
 import { Component, OnInit } from '@angular/core';
 import IPost from '../../interfaces/post.interface';
@@ -10,10 +11,9 @@ import IPost from '../../interfaces/post.interface';
 export class PostsCardRenderComponent implements OnInit {
   constructor(private postsService: PostsService) {}
 
-  public posts: IPost[] = [];
-
+  public posts: IPost[] = mockedPosts;
   ngOnInit(): void {
-    this.getFeaturedPosts();
+    // this.getFeaturedPosts();
   }
 
   getFeaturedPosts(): void {

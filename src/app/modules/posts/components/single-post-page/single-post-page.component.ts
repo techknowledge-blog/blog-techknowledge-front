@@ -1,3 +1,4 @@
+import { mockedPosts } from './../../../shared/mocks/post-mocks';
 import { PostsService } from './../../posts.service';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -22,7 +23,11 @@ export class SinglePostPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.getSlugByRoute();
-    this.getPostBySlug();
+
+    //mocked state
+    this.post = mockedPosts.find((post) => post.slug === this.slug);
+
+    // this.getPostBySlug();
   }
 
   ngOnDestroy(): void {

@@ -9,7 +9,6 @@ RUN npm install
 
 RUN npm run build --prod
 
-CMD [ "npx json-server -H 0.0.0.0 -p 3000 -w src/app/modules/shared/mocks/post-mocks.json" ]
 #NGINX STAGE
 FROM nginx:1.22.0-alpine
 
