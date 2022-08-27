@@ -18,4 +18,3 @@ COPY --from=build /usr/src/app/dist/blog-techknowledge-front /usr/share/nginx/ht
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80 443 2015
-
