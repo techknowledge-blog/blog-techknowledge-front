@@ -16,14 +16,13 @@ mat-card {
 
   mat-card-title {
     margin-top: 1.6rem;
-    font-family: Poppins;
-    font-weight: bold;
-    color: #505059;
+    font-family: $poppins-bold;
+    color: $grey-500;
     line-height: 3rem;
   }
 
   mat-card-content {
-    font-family: Roboto;
+    font-family: $roboto-regular;
     font-size: 1.6rem;
     line-height: 2.4rem;
   }

@@ -2,17 +2,8 @@
 @use "@angular/material" as mat;
 @use "./variables" as vars;
 
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins"),
-    url(../assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-    url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
-}
+@use "./PoppinsFont";
+@use "./RobotoFont";
 
 $primary-colors: (
   main: vars.$primary-dark,
@@ -50,10 +41,8 @@ $primary-theme: mat.define-light-theme(
   )
 );
 
-$poppins: "Poppins", "Helvetica Neue", sans-serif;
-
 $typography: mat.define-typography-config(
-  $font-family: $poppins,
+  $font-family: vars.$poppins-regular,
 );
 
 @include mat.core($typography);

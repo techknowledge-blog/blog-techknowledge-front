@@ -14,4 +14,9 @@ export class PostsService {
   getFeaturedPosts(): Observable<IPost[]> {
     return this.http.get<IPost[]>(this.API_URL + '/posts');
   }
+
+  //while data is mocked, the return need to be a array with the target object
+  getPostBySlug(slug: string): Observable<IPost[]> {
+    return this.http.get<IPost[]>(this.API_URL + '/posts?slug=' + slug);
+  }
 }

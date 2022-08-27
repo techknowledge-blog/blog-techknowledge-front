@@ -1,0 +1,61 @@
+@use "../../../../../style/variables.scss" as *;
+
+main {
+  width: 50%;
+  margin: 0 auto;
+
+  article.post-article {
+    padding: 6.4rem 0;
+
+    header {
+      h1 {
+        font-family: $poppins-bold;
+        color: $grey-500;
+        font-size: 3.2rem;
+        margin-bottom: 1.6rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $grey-500;
+      }
+    }
+
+    div.post-content {
+      font-family: $roboto-regular;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: $grey-700;
+
+      p {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+    article.post-article {
+      header {
+        h1 {
+          font-size: 2.4rem;
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+}

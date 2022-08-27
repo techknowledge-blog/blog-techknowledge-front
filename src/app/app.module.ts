@@ -20,6 +20,7 @@ import { SharedModule } from './modules/shared/shared.module';
     SharedModule,
     InsightOfDaysModule,
     BrowserAnimationsModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

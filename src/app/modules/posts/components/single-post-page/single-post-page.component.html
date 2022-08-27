@@ -1,1 +1,10 @@
-<p>single-post-page works!</p>
+<main>
+  <article class="post-article">
+    <header>
+      <h1>{{ post?.title }}</h1>
+      <h2>{{ post?.subtitle }}</h2>
+    </header>
+    <app-divider></app-divider>
+    <div class="post-content" [innerHTML]="post?.content"></div>
+  </article>
+</main>
