@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+#support files
+src/app/modules/shared/mocks/posts-mock.md
+
 # Compiled output
 /dist
 /tmp
