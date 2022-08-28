@@ -40,8 +40,7 @@ export const mockedPosts: IPost[] = [
     previewContent:
       '<p>Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!</p>',
     slug: 'por-que-esse-blog-existe',
-    previewImagePath:
-      '../../../../../assets/img/olimpiada-do-conhecimento.jpeg',
+    previewImagePath: '../../../../../assets/img/techknowledge.jpeg',
     createdAt: '2020-05-01T00:00:00.000Z',
     updatedAt: '2020-05-01T00:00:00.000Z',
   },
