@@ -3,7 +3,7 @@ import IPost from '../../posts/interfaces/post.interface';
 export const mockedPosts: IPost[] = [
   {
     id: 1,
-    title: 'Olímpiada do Conhecimento?',
+    title: 'Olímpiada do Conhecimento',
     category: {
       id: 1,
       name: 'Olímpiada do Conhecimento',
@@ -18,6 +18,8 @@ export const mockedPosts: IPost[] = [
     previewContent:
       '<p>O que é a Olimpíada do Conhecimento? Como é o processo de treinamento dos competidores? Isso e muito mais, vamos ver no decorrer deste post, sobre essa competição que tem gerado um impacto na vida de muitos competidores que passam por ela.</p>',
     slug: 'quem-e-leticia',
+    previewImagePath:
+      '../../../../../assets/img/olimpiada-do-conhecimento.jpeg',
     createdAt: '2020-05-01T00:00:00.000Z',
     updatedAt: '2020-05-01T00:00:00.000Z',
   },
@@ -38,6 +40,8 @@ export const mockedPosts: IPost[] = [
     previewContent:
       '<p>Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!</p>',
     slug: 'por-que-esse-blog-existe',
+    previewImagePath:
+      '../../../../../assets/img/olimpiada-do-conhecimento.jpeg',
     createdAt: '2020-05-01T00:00:00.000Z',
     updatedAt: '2020-05-01T00:00:00.000Z',
   },
@@ -58,6 +62,7 @@ export const mockedPosts: IPost[] = [
     previewContent:
       '<p class="subtitle">		 Quem é a Leticia e o Mikael? São dois aventureiros? São dois alíenigenas de outro planeta? Ou são só dois devs 		 que gostam muito de tecnologia? 		 Vem descubrir um pouco sobre a jornada desses dois jovens devs.   	</p>',
     slug: 'quem-e-mikael',
+    previewImagePath: '../../../../../assets/img/quem-somos-nos.jpeg',
     createdAt: '2020-05-01T00:00:00.000Z',
     updatedAt: '2020-05-01T00:00:00.000Z',
   },

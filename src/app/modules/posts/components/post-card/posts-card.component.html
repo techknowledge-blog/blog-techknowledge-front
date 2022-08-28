@@ -6,10 +6,7 @@
   [class.mat-elevation-z2]="!isHovering"
   class="example-card"
 >
-  <img
-    src="../../../../../assets/img/planning.jpeg"
-    alt="Photo of a Shiba Inu"
-  />
+  <img [src]="post.previewImagePath" alt="Photo of a Shiba Inu" />
   <mat-card-title>{{ post.title }}</mat-card-title>
   <mat-card-subtitle>{{ post.category.name }}</mat-card-subtitle>
   <mat-card-content [innerHtml]="post.previewContent"></mat-card-content>
