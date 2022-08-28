@@ -13,6 +13,7 @@ main {
         color: $grey-500;
         font-size: 3.2rem;
         margin-bottom: 1.6rem;
+        line-height: 4rem;
       }
       h2 {
         font-size: 1.6rem;
@@ -59,13 +60,5 @@ main {
 @media screen and (max-width: 600px) {
   main {
     width: 90%;
-    article.post-article {
-      header {
-        h1 {
-          font-size: 2.4rem;
-          margin-bottom: 1.6rem;
-        }
-      }
-    }
   }
 }
