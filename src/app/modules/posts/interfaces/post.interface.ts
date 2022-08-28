@@ -6,6 +6,7 @@ export default interface IPost {
   content: string;
   previewContent: string;
   slug: string;
+  previewImagePath: string;
   createdAt: string;
   updatedAt: string;
 }
