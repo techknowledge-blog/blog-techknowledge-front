@@ -1,8 +1,9 @@
-version: "3"
+version: "3.8"
+
 services:
   app:
-    image: "blog-techknowledge-front"
+    container_name: blog-techknowledge-front-container
+    image: techknowledge-front-image
+    build: .
     ports:
-      - "4200:4200"
-    volumes:
-      - ".:/usr/app"
+      - "8081:80"

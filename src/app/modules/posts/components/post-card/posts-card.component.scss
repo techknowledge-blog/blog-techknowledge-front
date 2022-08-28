@@ -1,0 +1,55 @@
+@use "../../../../../style/variables.scss" as *;
+
+mat-card {
+  margin: 1.6rem 5.6rem;
+  padding: 0;
+  cursor: pointer;
+  background-color: $white-medium;
+  padding-bottom: 2.4rem;
+
+  mat-card-content,
+  mat-card-title,
+  mat-card-subtitle,
+  mat-card-actions {
+    padding: 0 2.4rem;
+  }
+
+  mat-card-title {
+    margin-top: 1.6rem;
+    font-family: $poppins-bold;
+    color: $grey-500;
+    line-height: 3rem;
+  }
+
+  mat-card-content {
+    font-family: $roboto-regular;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  img {
+    width: 100%;
+    height: 23.2rem;
+    object-fit: cover;
+  }
+
+  mat-card-actions {
+    button {
+      background-color: $dark-medium;
+      color: $white;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  mat-card {
+    margin: 1.6rem 3.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  mat-card {
+    margin: 1.6rem 0;
+  }
+}

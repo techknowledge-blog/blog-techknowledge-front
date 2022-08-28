@@ -1,14 +1,20 @@
-FROM node:16.15.1-alpine
+#BUILD STAGE
+FROM node:16.15-alpine3.16 as build
 
-USER root
-
-WORKDIR /usr/app
-
-COPY package.json ./
-COPY package-lock.json ./
-
-RUN npm install --legacy-peer-deps
+WORKDIR /usr/src/app
 
 COPY . .
 
-CMD ["npm", "start"]
+RUN npm install
+
+RUN npm run build --prod
+
+#NGINX STAGE
+FROM nginx:1.22.0-alpine
+
+VOLUME /var/cache/nginx
+
+COPY --from=build /usr/src/app/dist/blog-techknowledge-front /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80 443 2015
