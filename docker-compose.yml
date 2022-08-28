@@ -1,7 +1,8 @@
-version: "2.1"
+version: "3.8"
 
 services:
   app:
+    container_name: blog-techknowledge-front-container
     image: techknowledge-front-image
     build: .
     ports:
