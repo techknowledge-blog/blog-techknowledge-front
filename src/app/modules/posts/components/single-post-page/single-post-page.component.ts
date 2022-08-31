@@ -22,6 +22,7 @@ export class SinglePostPageComponent implements OnInit {
   private subscription!: Subscription;
 
   ngOnInit(): void {
+    this.setScrollToInitialPosition();
     this.getSlugByRoute();
 
     //mocked state
@@ -32,6 +33,10 @@ export class SinglePostPageComponent implements OnInit {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  setScrollToInitialPosition(): void {
+    window.scroll(0, 0);
   }
 
   getSlugByRoute(): void {
