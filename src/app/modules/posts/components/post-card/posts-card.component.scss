@@ -31,7 +31,7 @@ mat-card {
     font-family: $roboto-regular;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    height: 22rem;
+    height: 16rem;
   }
 
   img {
@@ -96,57 +96,21 @@ mat-card {
     }
   }
 
-  @media screen and (max-width: 890px) {
-    mat-card-content {
-      height: 8rem;
-    }
-  }
-
-  @media screen and (max-width: 775px) {
-    mat-card-content {
-      height: 10rem;
-    }
-  }
-
-  @media screen and (max-width: 570px) {
-    mat-card-content {
-      height: 12rem;
-    }
-  }
-
-  @media screen and (max-width: 470px) {
-    mat-card-content {
-      height: 14rem;
-    }
-  }
-
-  @media screen and (max-width: 410px) {
-    mat-card-content {
-      height: 16rem;
-    }
-  }
-
-  @media screen and (max-width: 390px) {
-    mat-card-content {
-      height: 18rem;
-    }
-  }
-
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 1166px) {
     mat-card-content {
       height: 20rem;
     }
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 972px) {
     mat-card-content {
       height: 22rem;
     }
   }
 
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 890px) {
     mat-card-content {
-      height: 25rem;
+      height: auto;
     }
   }
 }
