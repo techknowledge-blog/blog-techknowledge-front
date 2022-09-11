@@ -1,3 +1,4 @@
+import { getLongDateFormat } from './../../../shared/utils/get-long-date-format.util';
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import IPost from 'src/app/modules/posts/interfaces/post.interface';
@@ -14,5 +15,9 @@ export class PostCardComponent implements OnInit {
 
   public isHovering: boolean = false;
 
-  ngOnInit(): void {}
+  formattedCreatedDate!: string;
+
+  ngOnInit(): void {
+    this.formattedCreatedDate = getLongDateFormat(this.post?.createdAt!);
+  }
 }

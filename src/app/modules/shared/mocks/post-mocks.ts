@@ -1,15 +1,15 @@
 import IPost from '../../posts/interfaces/post.interface';
 
-export const mockedPosts: any = [
+export const mockedPosts: IPost[] = [
   {
     id: 1,
     title: 'Olímpiada do Conhecimento',
     category: {
       id: 1,
       name: 'Olímpiada do Conhecimento',
-      slug: 'olimpiada-do-conhecimento',
-      created_at: '2020-05-01T00:00:00.000Z',
-      updated_at: '2020-05-01T00:00:00.000Z',
+      slug: 'olimpiada',
+      created_at: new Date(),
+      updated_at: new Date(),
     },
     subtitle:
       'O que é a Olimpíada do Conhecimento? Como é o processo de treinamento dos competidores? Isso e muito mais, vamos ver no decorrer deste post, sobre essa competição que tem gerado um impacto na vida de muitos competidores que passam por ela.',
@@ -20,8 +20,8 @@ export const mockedPosts: any = [
     slug: 'olimpiada-do-conhecimento',
     previewImagePath:
       '../../../../../assets/img/olimpiada-do-conhecimento.jpeg',
-    createdAt: '2020-05-01T00:00:00.000Z',
-    updatedAt: '2020-05-01T00:00:00.000Z',
+    createdAt: new Date(),
+    updatedAt: new Date(),
   },
   {
     id: 2,
@@ -29,9 +29,9 @@ export const mockedPosts: any = [
     category: {
       id: 1,
       name: 'História do Techknowledge',
-      slug: 'historia-do-techknowledge',
-      created_at: '2020-05-01T00:00:00.000Z',
-      updated_at: '2020-05-01T00:00:00.000Z',
+      slug: 'techknowledge',
+      created_at: new Date(),
+      updated_at: new Date(),
     },
     subtitle:
       'Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!',
@@ -41,8 +41,8 @@ export const mockedPosts: any = [
       '<p>Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!</p>',
     slug: 'techknowledge-ponto-zero',
     previewImagePath: '../../../../../assets/img/techknowledge.jpeg',
-    createdAt: '2020-05-01T00:00:00.000Z',
-    updatedAt: '2020-05-01T00:00:00.000Z',
+    createdAt: new Date(),
+    updatedAt: new Date(),
   },
   {
     id: 3,
@@ -50,9 +50,9 @@ export const mockedPosts: any = [
     category: {
       id: 1,
       name: 'História do Techknowledge',
-      slug: 'historia-do-techknowledge',
-      created_at: '2020-05-01T00:00:00.000Z',
-      updated_at: '2020-05-01T00:00:00.000Z',
+      slug: 'techknowledge',
+      created_at: new Date(),
+      updated_at: new Date(),
     },
     subtitle:
       'Quem é a Leticia e o Mikael? São dois aventureiros? São dois alíenigenas de outro planeta? Ou são só dois devs 		 que gostam muito de tecnologia? 		 Vem descobrir um pouco sobre a jornada desses dois jovens devs.',
@@ -62,7 +62,7 @@ export const mockedPosts: any = [
       '<p class="subtitle">		 Quem é a Leticia e o Mikael? São dois aventureiros? São dois alíenigenas de outro planeta? Ou são só dois devs 		 que gostam muito de tecnologia? 		 Vem descubrir um pouco sobre a jornada desses dois jovens devs.   	</p>',
     slug: 'quem-somos-nos',
     previewImagePath: '../../../../../assets/img/quem-somos-nos.jpeg',
-    createdAt: '2020-05-01T00:00:00.000Z',
-    updatedAt: '2020-05-01T00:00:00.000Z',
+    createdAt: new Date(),
+    updatedAt: new Date(),
   },
 ];

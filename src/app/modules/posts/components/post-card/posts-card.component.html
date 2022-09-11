@@ -2,16 +2,24 @@
   [routerLink]="['/posts/', post?.slug]"
   (mouseover)="isHovering = true"
   (mouseout)="isHovering = false"
-  [class.mat-elevation-z6]="isHovering"
-  [class.mat-elevation-z0]="!isHovering"
+  [class.mat-elevation-z0]="true"
   class="example-card"
 >
-  <img [src]="post?.previewImagePath" alt="Photo of a Shiba Inu" />
+  <img class="post-image" [src]="post?.previewImagePath" />
   <div class="under-image-line">
-    <span>{{ post?.createdAt }}</span>
-    <span>sdsd</span>
+    <span>{{ post?.category.slug }}</span>
+    <span>{{ formattedCreatedDate }}</span>
   </div>
   <mat-card-title>{{ post?.title }}</mat-card-title>
-  <mat-card-subtitle>{{ post?.category.name }}</mat-card-subtitle>
   <mat-card-content [innerHtml]="post?.previewContent"></mat-card-content>
+  <section class="author-card-section">
+    <img
+      src="../../../../../assets/img/mikael-ribeiro-avatar.jpeg"
+      alt="Avatar do criador do blog"
+    />
+    <div>
+      <span>Mikael Ribeiro</span>
+      <span>Desenvolvedor Full Stack</span>
+    </div>
+  </section>
 </mat-card>

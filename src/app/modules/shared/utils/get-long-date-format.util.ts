@@ -1,4 +1,4 @@
-export const getLongDateFormat = (date: Date) => {
+export const getLongDateFormat = (date: Date): string => {
   const formatter = Intl.DateTimeFormat('pt-BR', {
     dateStyle: 'long',
   });
