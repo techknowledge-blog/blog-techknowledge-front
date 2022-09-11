@@ -13,13 +13,10 @@
   <mat-card-title>{{ post?.title }}</mat-card-title>
   <mat-card-content [innerHtml]="post?.previewContent"></mat-card-content>
   <section class="author-card-section">
-    <img
-      src="../../../../../assets/img/mikael-ribeiro-avatar.jpeg"
-      alt="Avatar do criador do blog"
-    />
+    <img [src]="post?.author.avatarPath" alt="Avatar do criador do blog" />
     <div>
-      <span>Mikael Ribeiro</span>
-      <span>Desenvolvedor Full Stack</span>
+      <span>{{ post?.author.name }}</span>
+      <span>{{ post?.author.function }}</span>
     </div>
   </section>
 </mat-card>

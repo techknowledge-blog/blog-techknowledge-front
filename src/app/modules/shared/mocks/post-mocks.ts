@@ -20,6 +20,11 @@ export const mockedPosts: IPost[] = [
     slug: 'olimpiada-do-conhecimento',
     previewImagePath:
       '../../../../../assets/img/olimpiada-do-conhecimento.jpeg',
+    author: {
+      name: 'Leticia Dias',
+      avatarPath: '../../../../../assets/img/leticia-dias-avatar.jpeg',
+      function: 'Desenvolvedora Full Stack',
+    },
     createdAt: new Date(),
     updatedAt: new Date(),
   },
@@ -32,6 +37,11 @@ export const mockedPosts: IPost[] = [
       slug: 'techknowledge',
       created_at: new Date(),
       updated_at: new Date(),
+    },
+    author: {
+      name: 'Mikael Ribeiro',
+      avatarPath: '../../../../../assets/img/mikael-ribeiro-avatar.jpeg',
+      function: 'Desenvolvedor Full Stack',
     },
     subtitle:
       'Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!',
@@ -53,6 +63,11 @@ export const mockedPosts: IPost[] = [
       slug: 'techknowledge',
       created_at: new Date(),
       updated_at: new Date(),
+    },
+    author: {
+      name: 'Leticia Dias',
+      avatarPath: '../../../../../assets/img/leticia-dias-avatar.jpeg',
+      function: 'Desenvolvedora Full Stack',
     },
     subtitle:
       'Quem é a Leticia e o Mikael? São dois aventureiros? São dois alíenigenas de outro planeta? Ou são só dois devs 		 que gostam muito de tecnologia? 		 Vem descobrir um pouco sobre a jornada desses dois jovens devs.',
