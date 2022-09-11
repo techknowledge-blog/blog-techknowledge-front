@@ -1,13 +1,17 @@
 <mat-card
-  [routerLink]="['/posts/', post.slug]"
+  [routerLink]="['/posts/', post?.slug]"
   (mouseover)="isHovering = true"
   (mouseout)="isHovering = false"
-  [class.mat-elevation-z8]="isHovering"
-  [class.mat-elevation-z2]="!isHovering"
+  [class.mat-elevation-z6]="isHovering"
+  [class.mat-elevation-z0]="!isHovering"
   class="example-card"
 >
-  <img [src]="post.previewImagePath" alt="Photo of a Shiba Inu" />
-  <mat-card-title>{{ post.title }}</mat-card-title>
-  <mat-card-subtitle>{{ post.category.name }}</mat-card-subtitle>
-  <mat-card-content [innerHtml]="post.previewContent"></mat-card-content>
+  <img [src]="post?.previewImagePath" alt="Photo of a Shiba Inu" />
+  <div class="under-image-line">
+    <span>{{ post?.createdAt }}</span>
+    <span>sdsd</span>
+  </div>
+  <mat-card-title>{{ post?.title }}</mat-card-title>
+  <mat-card-subtitle>{{ post?.category.name }}</mat-card-subtitle>
+  <mat-card-content [innerHtml]="post?.previewContent"></mat-card-content>
 </mat-card>

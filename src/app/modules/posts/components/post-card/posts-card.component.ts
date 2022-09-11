@@ -10,7 +10,7 @@ import IPost from 'src/app/modules/posts/interfaces/post.interface';
 export class PostCardComponent implements OnInit {
   constructor() {}
 
-  @Input() post!: IPost;
+  @Input() post?: IPost;
 
   public isHovering: boolean = false;
 

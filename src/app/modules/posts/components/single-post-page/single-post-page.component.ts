@@ -26,7 +26,7 @@ export class SinglePostPageComponent implements OnInit {
     this.getSlugByRoute();
 
     //mocked state
-    this.post = mockedPosts.find((post) => post.slug === this.slug);
+    this.post = mockedPosts.find((post: IPost) => post.slug === this.slug);
 
     // this.getPostBySlug();
   }

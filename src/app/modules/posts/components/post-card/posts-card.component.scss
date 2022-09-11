@@ -40,6 +40,20 @@ mat-card {
       font-weight: bold;
     }
   }
+
+  div.under-image-line {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+
+    span:first-child {
+      background-color: blue;
+    }
+
+    span:last-child {
+      background-color: blue;
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {

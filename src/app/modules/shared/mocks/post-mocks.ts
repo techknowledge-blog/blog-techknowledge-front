@@ -1,6 +1,6 @@
 import IPost from '../../posts/interfaces/post.interface';
 
-export const mockedPosts: IPost[] = [
+export const mockedPosts: any = [
   {
     id: 1,
     title: 'Olímpiada do Conhecimento',
