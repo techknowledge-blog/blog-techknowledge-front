@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { PostCardComponent } from './components/post-card/posts-card.component';
 import { SinglePostPageComponent } from './components/single-post-page/single-post-page.component';
 import { PostsPageComponent } from './components/posts-page/posts-page.component';
+import { PostMainCardComponent } from './components/post-main-card/post-main-card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PostsPageComponent } from './components/posts-page/posts-page.component
     PostsCardRenderComponent,
     SinglePostPageComponent,
     PostsPageComponent,
+    PostMainCardComponent,
   ],
   providers: [PostsService],
   imports: [CommonModule, SharedModule, PostsRoutingModule],

@@ -1,0 +1,10 @@
+@use "../../../../../style/variables.scss" as *;
+
+mat-card {
+  margin: 0 2.4rem;
+  padding: 0;
+  background-color: yellow;
+  display: flex;
+
+  // background-color: $white-medium;
+}

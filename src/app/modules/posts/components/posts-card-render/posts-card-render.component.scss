@@ -1,4 +1,4 @@
-div.main {
+div.post-columns {
   display: flex;
   justify-content: space-between;
 
@@ -9,7 +9,7 @@ div.main {
 }
 
 @media screen and (max-width: 890px) {
-  div.main {
+  div.post-columns {
     flex-direction: column;
 
     app-card {
