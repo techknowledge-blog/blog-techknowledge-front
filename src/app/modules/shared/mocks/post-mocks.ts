@@ -18,6 +18,32 @@ export const mockedPosts: IPost[] = [
     previewContent:
       '<p>O que é a Olimpíada do Conhecimento? Como é o processo de treinamento dos competidores? Isso e muito mais, vamos ver no decorrer deste post, sobre essa competição que tem gerado um impacto na vida de muitos competidores que passam por ela.</p>',
     slug: 'olimpiada-do-conhecimento',
+    previewImagePath: '../../../../../assets/img/angular.png',
+    author: {
+      name: 'Leticia Dias',
+      avatarPath: '../../../../../assets/img/leticia-dias-avatar.jpeg',
+      function: 'Desenvolvedora Full Stack',
+    },
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: 2,
+    title: 'Olímpiada do Conhecimento',
+    category: {
+      id: 1,
+      name: 'Olímpiada do Conhecimento',
+      slug: 'olimpiada',
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+    subtitle:
+      'O que é a Olimpíada do Conhecimento? Como é o processo de treinamento dos competidores? Isso e muito mais, vamos ver no decorrer deste post, sobre essa competição que tem gerado um impacto na vida de muitos competidores que passam por ela.',
+    content:
+      '<h3>O que é a Olímpiada do Conhecimento?</h3>  <p>		É uma competição de educação profissional. Estados de todo o Brasil, seleciona um ou mais competidores para cada 		ocupação participante dessa disputa para concorrer a tão sonhada vaga para a competição internacional WorldSkills. 	</p>	<p>		A Olímpiada do Conhecimento é também conhecida como a seletiva nacional para WorldSkills, que é a maior competição		de educação profissional do mundo. Reconhecida por inspirar diversos jovens competidores ao redor do mundo, testando		suas habilidades e conhecimentos de acordo com sua ocupação com um padrão-ouro de excelência.	</p>  <h3>Como é o processo de treinamento dos competidores?</h3>	<p>		 Para cada ocupação dentro da Olímpiada do Conhecimento existe um processo para os treinamentos. Em geral cada 		 competidor(a) tem um período de 2 anos em preparo para a competição, onde passa por um série 		 de treinamentos intensivos, com provas e simulados para testar suas habilidades e conhecimentos na área 		 da sua ocupação. 	</p>	<p>		Todo esse processo não seria possível sem um treinador(a). O treinador é uma parte fundamental para o desenvolvimento		do competidor durante a prepação para a Olímpiada do Conhecimento. Por isso, cada competidor(a) é acompanhado por um treinador(a) que o auxília com métodos, estrátegias, técnicas		para que possa estar capacitado e pronto para a disputa.	</p>  <h3>Curiosidades</h3>	<p>		A 43ª WorldSkills Competition aconteceu no Anhembi Parque, São Paulo, Brasil, de 11 a 16 de agosto de 2015, sendo		a única edição que aconteceu na América Latina.	</p>	<p>	  A Olímpiada do Conhecimento era um evento geral que acontecia durante 1 semana em um local, que reunida os 		competidores de todos os estados participantes.</p>	<p>		Intercâmbios internos entre os estados aconteciam para realização de pequenas disputas em 	  preparação para Olímpiada do Conhecimento, mas com o período da pademia ficou suspenso por um tempo.	</p>	<h3>Conclusão</h3>	<p>		Nesse post conhecemos um pouco sobre a Olímpiada do Conhecimento e o que ela representa para todos que já tiveram		a oportunidade de participar dela. É uma experiência única, que só quem viveu saber o quanto especial se torna 		em nossas vidas.	</p>	<p>		No próximo post vou contar como eu (Leticia) e o Mikael nos tornamos competidores e como foi nossa experiência nessa		competição.	</p>',
+    previewContent:
+      '<p>O que é a Olimpíada do Conhecimento? Como é o processo de treinamento dos competidores? Isso e muito mais, vamos ver no decorrer deste post, sobre essa competição que tem gerado um impacto na vida de muitos competidores que passam por ela.</p>',
+    slug: 'olimpiada-do-conhecimento',
     previewImagePath:
       '../../../../../assets/img/olimpiada-do-conhecimento.jpeg',
     author: {
@@ -29,7 +55,7 @@ export const mockedPosts: IPost[] = [
     updatedAt: new Date(),
   },
   {
-    id: 2,
+    id: 3,
     title: 'Techknowledge: Ponto Zero',
     category: {
       id: 1,
@@ -55,7 +81,7 @@ export const mockedPosts: IPost[] = [
     updatedAt: new Date(),
   },
   {
-    id: 3,
+    id: 4,
     title: 'Quem somos nós?',
     category: {
       id: 1,

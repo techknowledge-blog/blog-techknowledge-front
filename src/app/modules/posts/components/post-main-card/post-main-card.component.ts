@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { getLongDateFormat } from 'src/app/modules/shared/utils/get-long-date-format.util';
+import IPost from '../../interfaces/post.interface';
 
 @Component({
   selector: 'app-post-main-card',
@@ -6,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-main-card.component.scss'],
 })
 export class PostMainCardComponent implements OnInit {
+  @Input() mainPost?: IPost;
+  formattedCreatedDate!: string;
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.formattedCreatedDate = getLongDateFormat(this.mainPost?.createdAt!);
+  }
 }

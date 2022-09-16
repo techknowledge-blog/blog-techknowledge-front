@@ -1,7 +1,7 @@
 @use "../../../../../style/variables.scss" as *;
 
 mat-card {
-  margin: 3.2rem 2.4rem;
+  margin: 3.2rem auto;
   padding: 0;
   cursor: pointer;
   background-color: $white-medium;
