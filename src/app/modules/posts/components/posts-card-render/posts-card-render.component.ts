@@ -13,6 +13,7 @@ export class PostsCardRenderComponent implements OnInit {
 
   public posts?: IPost[];
   public mainPost: IPost = mockedPosts[0];
+
   ngOnInit(): void {
     this.posts = mockedPosts.slice(1, 4);
     // this.getFeaturedPosts();

@@ -2,9 +2,9 @@ export default interface IPost {
   id: number;
   title: string;
   category: any;
-  author: any;
   subtitle: string;
   content: string;
+  author: any;
   previewContent: string;
   slug: string;
   previewImagePath: string;

@@ -6,6 +6,10 @@ div.post-columns {
     flex: 1;
     display: flex;
   }
+
+  app-card:nth-child(2) {
+    margin: 0 2.4rem;
+  }
 }
 
 @media screen and (max-width: 890px) {
