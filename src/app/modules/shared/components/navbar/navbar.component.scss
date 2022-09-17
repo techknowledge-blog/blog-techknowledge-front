@@ -4,7 +4,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.4rem;
+  height: 7.2rem;
+  padding: 0 11.6rem;
 
   background-color: $primary-dark;
 
@@ -47,49 +48,53 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
-  #btn-mobile {
-    display: block;
-  }
-
-  #menu-list {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 7rem;
-    right: 0px;
-    height: 0;
-    transition: all ease-in-out .8s;
-    z-index: 1000;
-    background-color: rgba(12, 94, 255, 0.8);
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-
-  #menu-list a {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 800px) {
+  nav {
+    padding: 0 4rem;
     
-    font-size: 2.4rem;
+    #btn-mobile {
+      display: block;
+    }
 
-    padding: 2.4rem;
-  }
+    #menu-list {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 6rem;
+      right: 0px;
+      height: 0;
+      transition: all ease-in-out .8s;
+      z-index: 1000;
+      background-color: rgba(12, 94, 255, 0.8);
+      visibility: hidden;
+      overflow-y: hidden;
+    }
 
-  #menu-list a + a {
-    margin-left: 0;
-  }
+    #menu-list a {
+      display: flex;
+      flex-direction: column;
+      
+      font-size: 2.4rem;
 
-  #navbar.active #menu-list {
-    height: 242vh;
-    visibility: visible;
-    overflow-y: auto;
-  }
+      padding: 2.4rem;
+    }
 
-  #btn-close.close {
-    display: block;
-  }
+    #menu-list a + a {
+      margin-left: 0;
+    }
 
-  #btn-mobile.icon-hamgurber-remove {
-    display: none;
+    #navbar.active #menu-list {
+      height: 242vh;
+      visibility: visible;
+      overflow-y: auto;
+    }
+
+    #btn-close.close {
+      display: block;
+    }
+
+    #btn-mobile.icon-hamgurber-remove {
+      display: none;
+    }
   }
 }
