@@ -1,6 +1,18 @@
-<nav [class.mat-elevation-z2]="true">
-  <div class="menu-options">
-    <ul>
+<nav>
+  <div class="logo-page">
+    <img src="/assets/img/TechKnowledge.svg" alt="Logo da página com nome escrito TechKnowledge com seu tom na cor branca">
+  </div>
+  
+  <div class="menu-options" id="navbar">
+    <div class="icon-navbar" id="btn-mobile">
+        <img class="btn-mobile-remove" src="assets/img/icon-navbar.svg" alt="Ícone de menu responsivo no formato de duas linhas da cor branca">
+    </div>
+
+    <div class="icon-navbar" id="btn-close">
+        <img src="assets/img/icon-close.svg" alt="Ícone no formato de um X na cor branca">
+    </div>
+
+    <ul id="menu-list">
       <a routerLink="/">
         <li>Home</li>
       </a>
