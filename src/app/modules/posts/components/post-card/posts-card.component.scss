@@ -103,9 +103,27 @@ mat-card {
   }
 
   @media screen and (max-width: 890px) {
+    mat-card-title {
+      margin: 1rem 0;
+    }
+
+    div.under-image-line {
+      display: inline-block;
+    }
+
+    img {
+      height: 380px;
+    }
+
     mat-card-content {
       height: auto;
       margin-bottom: 2.4rem;
+    }
+  }
+
+  @media screen and (max-width: 734px) {
+    img {
+      height: 252px;
     }
   }
 }
