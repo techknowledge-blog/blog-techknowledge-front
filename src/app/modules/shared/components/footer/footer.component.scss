@@ -33,14 +33,60 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 2560px) {
   footer {
     .waves img {
-      height: 40px;
+      display: block;
+      height: 100px;
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1446px) {
+  footer {
+    .waves img {
+      height: 80px;
+      min-width: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1446px) {
+  footer {
+    .waves img {
+      height: 72px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    .waves img {
+      height: 56px;
     }
 
     .content {
       padding: 0 4rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  footer {
+    .waves img {
+      height: 48px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+  footer {
+    .waves img {
+      height: 180px;
     }
   }
 }
