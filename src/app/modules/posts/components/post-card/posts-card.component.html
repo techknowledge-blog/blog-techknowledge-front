@@ -1,7 +1,5 @@
 <mat-card
   [routerLink]="['/posts/', post?.slug]"
-  (mouseover)="isHovering = true"
-  (mouseout)="isHovering = false"
   [class.mat-elevation-z0]="true"
 >
   <img class="post-image" [src]="post?.previewImagePath" />

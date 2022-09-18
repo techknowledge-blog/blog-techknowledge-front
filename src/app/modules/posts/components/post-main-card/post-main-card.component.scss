@@ -5,6 +5,15 @@ mat-card.main-card {
   display: flex;
   justify-content: space-around;
   background-color: $white-medium;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+
+    mat-card-title {
+      color: $primary-dark;
+    }
+  }
 
   mat-card-content,
   mat-card-subtitle,
@@ -20,6 +29,7 @@ mat-card.main-card {
     margin-top: 10px;
     display: flex;
     align-items: center;
+    transition: 0.1s;
   }
 
   mat-card-content {

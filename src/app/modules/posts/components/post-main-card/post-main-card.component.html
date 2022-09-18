@@ -1,4 +1,8 @@
-<mat-card class="main-card" [class.mat-elevation-z0]="true">
+<mat-card
+  class="main-card"
+  [routerLink]="['/posts/', mainPost?.slug]"
+  [class.mat-elevation-z0]="true"
+>
   <div class="preview-image-container">
     <img class="preview-image" [src]="mainPost?.previewImagePath" />
   </div>

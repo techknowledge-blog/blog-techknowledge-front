@@ -5,17 +5,20 @@ mat-card {
   padding: 0;
   cursor: pointer;
   background-color: $white-medium;
+  transition: all ease-in-out 1s;
+  outline: none;
 
   &:hover {
-    // img.post-image {
-    //   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-    // }
+    mat-card-title {
+      color: $primary-dark;
+    }
   }
 
   mat-card-title {
     height: 5.6rem;
     display: flex;
     align-items: center;
+    transition: 0.1s;
   }
 
   mat-card-content,
