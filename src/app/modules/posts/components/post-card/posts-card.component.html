@@ -1,13 +1,19 @@
 <mat-card
-  [routerLink]="['/posts/', post.slug]"
-  (mouseover)="isHovering = true"
-  (mouseout)="isHovering = false"
-  [class.mat-elevation-z8]="isHovering"
-  [class.mat-elevation-z2]="!isHovering"
-  class="example-card"
+  [routerLink]="['/posts/', post?.slug]"
+  [class.mat-elevation-z0]="true"
 >
-  <img [src]="post.previewImagePath" alt="Photo of a Shiba Inu" />
-  <mat-card-title>{{ post.title }}</mat-card-title>
-  <mat-card-subtitle>{{ post.category.name }}</mat-card-subtitle>
-  <mat-card-content [innerHtml]="post.previewContent"></mat-card-content>
+  <img class="post-image" [src]="post?.previewImagePath" />
+  <div class="under-image-line">
+    <span>{{ post?.category.slug }}</span>
+    <span>{{ formattedCreatedDate }}</span>
+  </div>
+  <mat-card-title>{{ post?.title }}</mat-card-title>
+  <mat-card-content [innerHtml]="post?.previewContent"></mat-card-content>
+  <section class="author-card-section">
+    <img [src]="post?.author.avatarPath" alt="Avatar do criador do blog" />
+    <div>
+      <span>{{ post?.author.name }}</span>
+      <span>{{ post?.author.function }}</span>
+    </div>
+  </section>
 </mat-card>

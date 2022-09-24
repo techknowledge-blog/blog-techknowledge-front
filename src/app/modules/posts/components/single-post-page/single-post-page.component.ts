@@ -22,16 +22,21 @@ export class SinglePostPageComponent implements OnInit {
   private subscription!: Subscription;
 
   ngOnInit(): void {
+    this.setScrollToInitialPosition();
     this.getSlugByRoute();
 
     //mocked state
-    this.post = mockedPosts.find((post) => post.slug === this.slug);
+    this.post = mockedPosts.find((post: IPost) => post.slug === this.slug);
 
     // this.getPostBySlug();
   }
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  setScrollToInitialPosition(): void {
+    window.scroll(0, 0);
   }
 
   getSlugByRoute(): void {

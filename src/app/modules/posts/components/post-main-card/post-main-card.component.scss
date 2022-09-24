@@ -1,24 +1,18 @@
 @use "../../../../../style/variables.scss" as *;
 
-mat-card {
-  margin: 3.2rem auto;
+mat-card.main-card {
   padding: 0;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
   background-color: $white-medium;
-  transition: all ease-in-out 1s;
   outline: none;
 
   &:hover {
+    cursor: pointer;
+
     mat-card-title {
       color: $primary-dark;
     }
-  }
-
-  mat-card-title {
-    height: 5.6rem;
-    display: flex;
-    align-items: center;
-    transition: 0.1s;
   }
 
   mat-card-content,
@@ -30,21 +24,19 @@ mat-card {
     line-height: 3rem;
   }
 
+  mat-card-title {
+    height: 5.6rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.1s;
+  }
+
   mat-card-content {
     font-family: $roboto-regular;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    height: 16rem;
-  }
-
-  img {
-    width: 100%;
-    height: 23.2rem;
-    -webkit-box-shadow: -3px 9px 21px -10px rgba(86, 86, 86, 0.52);
-    box-shadow: -3px 9px 21px -10px rgba(86, 86, 86, 0.52);
-    margin-bottom: 1.2rem;
-    object-fit: cover;
-    transition: 0.2s;
+    height: 21rem;
   }
 
   section.author-card-section {
@@ -60,7 +52,6 @@ mat-card {
 
     div {
       position: relative;
-      bottom: 0.6rem;
 
       span {
         display: block;
@@ -72,9 +63,7 @@ mat-card {
     }
   }
 
-  div.under-image-line {
-    display: flex;
-    justify-content: space-between;
+  div.date-tag-line {
     align-items: center;
 
     span:first-child {
@@ -93,40 +82,56 @@ mat-card {
     }
   }
 
-  @media screen and (max-width: 1166px) {
-    mat-card-content {
-      height: 20rem;
+  &:hover {
+    img.preview-image-container {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     }
   }
 
-  @media screen and (max-width: 972px) {
-    mat-card-content {
-      height: 22rem;
-    }
-  }
+  div.preview-image-container {
+    margin-right: 2.4rem;
+    flex: 5;
 
-  @media screen and (max-width: 890px) {
-    mat-card-title {
-      margin: 1rem 0;
-    }
-
-    div.under-image-line {
-      display: inline-block;
-    }
-
-    img {
+    img.preview-image {
+      object-fit: cover;
+      -webkit-box-shadow: -10px 9px 21px -7px rgba(86, 86, 86, 0.52);
+      box-shadow: -10px 9px 21px -7px rgba(86, 86, 86, 0.52);
+      width: 100%;
       height: 380px;
     }
+  }
+
+  div.highlight-content-side {
+    flex: 4;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  mat-card.main-card {
+    flex-direction: column;
+    width: 100%;
 
     mat-card-content {
       height: auto;
       margin-bottom: 2.4rem;
     }
-  }
 
-  @media screen and (max-width: 734px) {
-    img {
-      height: 252px;
+    div.date-tag-line {
+      margin-top: 1.8rem;
+    }
+
+    div.preview-image-container {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 734px) {
+  mat-card.main-card {
+    div.preview-image-container {
+      img.preview-image {
+        height: 252px;
+      }
     }
   }
 }

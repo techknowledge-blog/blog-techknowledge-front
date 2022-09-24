@@ -1,19 +1,35 @@
 div.main {
-  display: flex;
-  justify-content: space-between;
-
-  app-card {
-    flex: 1;
+  div.post-columns {
     display: flex;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  div.main {
-    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 56px;
 
     app-card {
-      display: inline-block;
+      flex: 1;
+      display: flex;
+    }
+
+    app-card:nth-child(2) {
+      margin: 0 4.8rem;
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    & {
+      padding: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    div.post-columns {
+      flex-direction: column;
+
+      app-card:nth-child(2) {
+        margin: 0;
+      }
+      app-card {
+        display: inline-block;
+      }
     }
   }
 }
