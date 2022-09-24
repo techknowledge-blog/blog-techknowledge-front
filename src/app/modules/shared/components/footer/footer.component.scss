@@ -1,6 +1,7 @@
 @use "../../../../../style/variables.scss" as *;
 
 footer {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   
@@ -36,5 +37,57 @@ footer {
 @media screen and (max-width: 400px) {
   .waves img {
     height: 40px;
+=======
+  padding: 3.2rem;
+  box-shadow: 0px 0 3px rgba(0, 0, 0, 0.8);
+
+  p{
+    margin: 0;
+  } 
+
+  .logo {
+    margin-bottom: 1.6rem;
+  }
+  
+  .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social-networks {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    .instagram, 
+    .github,
+    .linkedin {
+      display: flex;
+      padding: 0 2.4rem;
+
+      a {
+        margin-left: 0.8rem;
+        text-decoration: none;
+        color: $dark-dark;
+        font-weight: 600;
+        transition: 0.3s;
+        
+        &:hover {
+          color: $dark-medium;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .linkedin img {
+      width: 2rem;
+      height: 2rem;
+    }
+>>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
   }
 }

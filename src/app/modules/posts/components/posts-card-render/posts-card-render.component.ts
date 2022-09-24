@@ -11,8 +11,16 @@ import IPost from '../../interfaces/post.interface';
 export class PostsCardRenderComponent implements OnInit {
   constructor(private postsService: PostsService) {}
 
+<<<<<<< HEAD
   public posts: IPost[] = mockedPosts;
   ngOnInit(): void {
+=======
+  public posts?: IPost[];
+  public mainPost: IPost = mockedPosts[0];
+
+  ngOnInit(): void {
+    this.posts = mockedPosts.slice(1, 4);
+>>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
     // this.getFeaturedPosts();
   }
 

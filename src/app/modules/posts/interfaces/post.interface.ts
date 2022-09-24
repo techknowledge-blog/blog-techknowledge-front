@@ -4,9 +4,13 @@ export default interface IPost {
   category: any;
   subtitle: string;
   content: string;
+  author: any;
   previewContent: string;
   slug: string;
   previewImagePath: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt?: Date;
+  updatedAt?: Date;
+
+  // createdAt: string;
+  // updatedAt: string;
 }

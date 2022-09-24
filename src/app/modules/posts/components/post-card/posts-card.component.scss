@@ -1,6 +1,7 @@
 @use "../../../../../style/variables.scss" as *;
 
 mat-card {
+<<<<<<< HEAD
   margin: 1.6rem 5.6rem;
   padding: 0;
   cursor: pointer;
@@ -15,6 +16,31 @@ mat-card {
   }
 
   mat-card-title {
+=======
+  margin: 3.2rem auto;
+  padding: 0;
+  cursor: pointer;
+  background-color: $white-medium;
+  transition: all ease-in-out 1s;
+  outline: none;
+
+  &:hover {
+    mat-card-title {
+      color: $primary-dark;
+    }
+  }
+
+  mat-card-title {
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    transition: 0.1s;
+  }
+
+  mat-card-content,
+  mat-card-subtitle,
+  mat-card-title {
+>>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
     margin-top: 1.6rem;
     font-family: $poppins-bold;
     color: $grey-500;
@@ -25,11 +51,16 @@ mat-card {
     font-family: $roboto-regular;
     font-size: 1.6rem;
     line-height: 2.4rem;
+<<<<<<< HEAD
+=======
+    height: 16rem;
+>>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
   }
 
   img {
     width: 100%;
     height: 23.2rem;
+<<<<<<< HEAD
     object-fit: cover;
   }
 
@@ -51,5 +82,95 @@ mat-card {
 @media screen and (max-width: 1000px) {
   mat-card {
     margin: 1.6rem 0;
+=======
+    -webkit-box-shadow: -3px 9px 21px -10px rgba(86, 86, 86, 0.52);
+    box-shadow: -3px 9px 21px -10px rgba(86, 86, 86, 0.52);
+    margin-bottom: 1.2rem;
+    object-fit: cover;
+    transition: 0.2s;
+  }
+
+  section.author-card-section {
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 100px;
+      width: 4.8rem;
+      height: 4.8rem;
+      margin-right: 0.8rem;
+    }
+
+    div {
+      position: relative;
+      bottom: 0.6rem;
+
+      span {
+        display: block;
+      }
+
+      span:first-child {
+        font-family: $poppins-bold;
+      }
+    }
+  }
+
+  div.under-image-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span:first-child {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+      font-family: $roboto-regular;
+      background-color: $post-tag;
+      margin-right: 0.8rem;
+    }
+
+    span:last-child {
+      font-size: 1.4rem;
+      font-family: $roboto-regular;
+      color: $grey-200;
+      font-weight: 900;
+    }
+  }
+
+  @media screen and (max-width: 1166px) {
+    mat-card-content {
+      height: 20rem;
+    }
+  }
+
+  @media screen and (max-width: 972px) {
+    mat-card-content {
+      height: 22rem;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    mat-card-title {
+      margin: 1rem 0;
+    }
+
+    div.under-image-line {
+      display: inline-block;
+    }
+
+    img {
+      height: 380px;
+    }
+
+    mat-card-content {
+      height: auto;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  @media screen and (max-width: 734px) {
+    img {
+      height: 252px;
+    }
+>>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
   }
 }

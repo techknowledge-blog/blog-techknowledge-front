@@ -8,6 +8,10 @@ import { SharedModule } from '../shared/shared.module';
 import { PostCardComponent } from './components/post-card/posts-card.component';
 import { SinglePostPageComponent } from './components/single-post-page/single-post-page.component';
 import { PostsPageComponent } from './components/posts-page/posts-page.component';
+<<<<<<< HEAD
+=======
+import { PostMainCardComponent } from './components/post-main-card/post-main-card.component';
+>>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { PostsPageComponent } from './components/posts-page/posts-page.component
     PostsCardRenderComponent,
     SinglePostPageComponent,
     PostsPageComponent,
+<<<<<<< HEAD
+=======
+    PostMainCardComponent,
+>>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
   ],
   providers: [PostsService],
   imports: [CommonModule, SharedModule, PostsRoutingModule],
