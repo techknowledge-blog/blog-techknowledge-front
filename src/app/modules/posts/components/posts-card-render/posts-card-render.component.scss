@@ -1,21 +1,4 @@
 div.main {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: space-between;
-
-  app-card {
-    flex: 1;
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  div.main {
-    flex-direction: column;
-
-    app-card {
-      display: inline-block;
-=======
   div.post-columns {
     display: flex;
     justify-content: space-between;
@@ -47,7 +30,6 @@ div.main {
       app-card {
         display: inline-block;
       }
->>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
     }
   }
 }

@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CardComponent } from './posts-card.component';
-
-describe('CardComponent', () => {
-  let component: CardComponent;
-  let fixture: ComponentFixture<CardComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [CardComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(CardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-=======
 import IPost from '../../interfaces/post.interface';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
@@ -31,8 +13,9 @@ const mockPost: IPost = {
   previewContent: 'random preview content',
   slug: 'random slug',
   previewImagePath: 'random preview image',
-  createdAt: 'new Date()',
-  updatedAt: 'new Date()',
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  author: {},
 };
 
 describe('CardComponent', () => {
@@ -49,14 +32,11 @@ describe('CardComponent', () => {
     fixture.detectChanges();
 
     component.post = mockPost;
->>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-<<<<<<< HEAD
-=======
 
   fit('should have a title from post-card component', () => {
     const postTitle = 'Mocked Post Title';
@@ -72,5 +52,4 @@ describe('CardComponent', () => {
 
     expect(elementWithTitle.textContent).toEqual(postTitle);
   });
->>>>>>> 7020cc6d264c952165e842c39f920e35d691a320
 });
