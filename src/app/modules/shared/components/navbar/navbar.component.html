@@ -1,40 +1,57 @@
 <nav>
-  <div class="logo-page">
-    <img
-      src="/assets/img/TechKnowledge.svg"
-      alt="Logo da página com nome escrito TechKnowledge com seu tom na cor branca"
-    />
-  </div>
-
-  <div class="menu-options" id="navbar">
-    <div class="icon-navbar" id="btn-mobile">
+  <div class="container">
+    <div class="logo-container">
       <img
-        class="btn-mobile-remove"
-        src="assets/img/icon-navbar.svg"
-        alt="Ícone de menu responsivo no formato de duas linhas da cor branca"
+        src="../../../../../assets/img/TechKnowledge.svg"
+        alt="Logo branca do Techknowledge"
       />
     </div>
-
-    <div class="icon-navbar" id="btn-close">
-      <img
-        src="assets/img/icon-close.svg"
-        alt="Ícone no formato de um X na cor branca"
-      />
-    </div>
-
-    <ul id="menu-list">
-      <a routerLink="/">
-        <li>Home</li>
-      </a>
-      <a routerLink="sobre">
-        <li>Sobre</li>
-      </a>
-      <a routerLink="posts">
-        <li>Posts</li>
-      </a>
-      <a routerLink="insight-of-days">
-        <li>InsigthsOfDays</li>
-      </a>
+    <ul>
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="sobre">Sobre</a>
+      </li>
+      <li>
+        <a routerLink="posts">Posts</a>
+      </li>
+      <li>
+        <a routerLink="insight-of-days">InsigthOfDays</a>
+      </li>
     </ul>
+    <div class="mobile-menu-icon">
+      <button (click)="showMenuItems()">
+        <img
+          *ngIf="!showMenu; else closeMenuIcon"
+          src="../../../../../assets/img/icon-navbar.svg"
+          alt="Botão com duas linhas, representando um formato parecido com um hambúrguer"
+        />
+        <ng-template #closeMenuIcon>
+          <img
+            src="../../../../../assets/img/icon-close.svg"
+            alt="Botão com duas linhas, representando um formato parecido com um hambúrguer"
+          />
+        </ng-template>
+      </button>
+    </div>
   </div>
 </nav>
+
+<div class="mobile-menu" *ngIf="showMenu">
+  <ul>
+    <li>
+      <a routerLink="/">Home</a>
+    </li>
+    <li>
+      <a routerLink="sobre">Sobre</a>
+    </li>
+    <li>
+      <a routerLink="posts">Posts</a>
+    </li>
+    <li>
+      <a routerLink="insight-of-days">InsightOfDays</a>
+    </li>
+  </ul>
+  <app-divider></app-divider>
+</div>

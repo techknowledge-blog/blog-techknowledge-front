@@ -1,9 +1,7 @@
 @use "/src/style/variables.scss" as *;
 
 header {
-  margin: 0 auto;
-  margin-top: 4.8rem;
-  width: 80%;
+  background-color: $primary-dark;
 
   .title {
     display: flex;
