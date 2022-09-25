@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  isBurgerMenu: boolean = true;
-  showMenu: boolean = false;
+  showMenu: boolean = true;
 
   constructor() {}
 

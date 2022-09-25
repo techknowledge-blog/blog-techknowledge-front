@@ -46,6 +46,8 @@ nav {
 }
 
 div.mobile-menu {
+  z-index: 0;
+
   ul {
     display: flex;
     flex-direction: column;
@@ -62,6 +64,38 @@ div.mobile-menu {
         text-decoration: none;
       }
     }
+  }
+}
+
+.top-down {
+  animation-name: topdown;
+  animation-duration: 0.3s;
+  height: 300px;
+}
+
+@keyframes topdown {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 300px;
+  }
+}
+
+.down-top {
+  animation-name: downtop;
+  animation-duration: 0.3s;
+  visibility: hidden;
+  height: 0;
+}
+
+@keyframes downtop {
+  0% {
+    visibility: hidden;
+    height: 300px;
+  }
+  100% {
+    height: 0px;
   }
 }
 

@@ -38,7 +38,7 @@
   </div>
 </nav>
 
-<div class="mobile-menu" *ngIf="showMenu">
+<div class="mobile-menu {{ showMenu ? 'top-down' : 'down-top' }}">
   <ul>
     <li>
       <a routerLink="/">Home</a>

@@ -1,6 +1,7 @@
 @use "/src/style/variables.scss" as *;
 
 header {
+  z-index: 1;
   background-color: $primary-dark;
 
   .title {
