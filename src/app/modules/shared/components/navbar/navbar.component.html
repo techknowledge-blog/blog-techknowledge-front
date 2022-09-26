@@ -1,18 +1,57 @@
-<nav [class.mat-elevation-z2]="true">
-  <div class="menu-options">
+<nav>
+  <div class="container">
+    <div class="logo-container">
+      <img
+        src="../../../../../assets/img/TechKnowledge.svg"
+        alt="Logo branca do Techknowledge"
+      />
+    </div>
     <ul>
-      <a routerLink="/">
-        <li>Home</li>
-      </a>
-      <a routerLink="sobre">
-        <li>Sobre</li>
-      </a>
-      <a routerLink="posts">
-        <li>Posts</li>
-      </a>
-      <a routerLink="insight-of-days">
-        <li>InsigthsOfDays</li>
-      </a>
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="sobre">Sobre</a>
+      </li>
+      <li>
+        <a routerLink="posts">Posts</a>
+      </li>
+      <li>
+        <a routerLink="insight-of-days">InsightOfDays</a>
+      </li>
     </ul>
+    <div class="mobile-menu-icon">
+      <button (click)="showMenuItems()">
+        <img
+          *ngIf="!showMenu; else closeMenuIcon"
+          src="../../../../../assets/img/icon-navbar.svg"
+          alt="Botão com duas linhas, representando um formato parecido com um hambúrguer"
+        />
+        <ng-template #closeMenuIcon>
+          <img
+            src="../../../../../assets/img/icon-close.svg"
+            alt="Botão com duas linhas, representando um formato parecido com um hambúrguer"
+          />
+        </ng-template>
+      </button>
+    </div>
   </div>
 </nav>
+
+<div class="mobile-menu {{ showMenu ? 'top-down' : 'down-top' }}">
+  <ul>
+    <li>
+      <a routerLink="/">Home</a>
+    </li>
+    <li>
+      <a routerLink="sobre">Sobre</a>
+    </li>
+    <li>
+      <a routerLink="posts">Posts</a>
+    </li>
+    <li>
+      <a routerLink="insight-of-days">InsightOfDays</a>
+    </li>
+  </ul>
+  <app-divider></app-divider>
+</div>

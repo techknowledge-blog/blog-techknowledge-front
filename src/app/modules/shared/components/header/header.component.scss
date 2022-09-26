@@ -1,27 +1,75 @@
 @use "/src/style/variables.scss" as *;
 
 header {
-  margin: 0 auto;
-  margin-top: 4.8rem;
-  width: 80%;
+  background-color: $primary-dark;
 
-  .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .description {
+  div.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-top: 32px;
 
-    p {
-      color: $grey-700;
-      text-align: center;
-      line-height: 20px;
+    img {
+      width: 500px;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.4rem;
+
+      span {
+        font-size: 2rem;
+        display: block;
+        color: $white;
+        line-height: 3.2rem;
+        font-family: $roboto-regular;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    padding: 0 2.4rem;
+
+    div.container {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 823px) {
+  header {
+    div.container {
+      height: 250px;
+      align-items: center;
+
+      img {
+        width: 300px;
+      }
+
+      div.description {
+        width: 100%;
+        span {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 357px) {
+  header {
+    div.container {
+      height: auto;
+      padding-bottom: 2.4rem;
+      img {
+        width: 230px;
+      }
     }
   }
 }

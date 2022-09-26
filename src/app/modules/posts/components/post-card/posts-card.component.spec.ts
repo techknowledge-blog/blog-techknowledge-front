@@ -13,8 +13,9 @@ const mockPost: IPost = {
   previewContent: 'random preview content',
   slug: 'random slug',
   previewImagePath: 'random preview image',
-  createdAt: 'new Date()',
-  updatedAt: 'new Date()',
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  author: {},
 };
 
 describe('CardComponent', () => {
