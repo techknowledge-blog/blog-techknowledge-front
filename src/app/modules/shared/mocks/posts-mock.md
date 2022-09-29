@@ -1,4 +1,3 @@
-<h3>"Faz funcionar e depois melhora"</h3>
 <p>
   Cheguei à conclusão de que esse pensamento pode ser perigoso, porque quando pensamos assim, acabamos nos acostumando apenas em fazer funcionar e nos esquecemos de melhorar depois. Isso é algo muito comum, principalmente para nós devs, mas que em determinadas situações acaba fazendo sentido, por diversos motivos.
 </p>
