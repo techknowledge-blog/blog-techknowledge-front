@@ -1,4 +1,8 @@
-# BlogTechknowledgeFront
+# Blog Techknowledge
+
+O Blog [Techknowledge](https://blog-techknowledge-front.web.app/) construído com muito carinho para os desenvolvedores, de devs pra devs! Onde eu e minha amiga @leticiadia contamos sobre nossas experiências na área de tecnologia, assim como compartilhamos conteúdos sobre as tecnologias que ensinamos! Com o objetivo de compartilhar conhecimento!
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 
