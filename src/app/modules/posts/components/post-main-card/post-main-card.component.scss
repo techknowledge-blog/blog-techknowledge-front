@@ -15,6 +15,11 @@ mat-card.main-card {
     }
   }
 
+  mat-card-subtitle,
+  mat-card-content {
+    text-align: justify;
+  }
+
   mat-card-content,
   mat-card-subtitle,
   mat-card-title {
