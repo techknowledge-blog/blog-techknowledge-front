@@ -17,6 +17,7 @@ main {
       }
       h2 {
         font-size: 1.6rem;
+        text-align: justify;
         line-height: 2.4rem;
         color: $grey-500;
       }
@@ -35,11 +36,19 @@ main {
       p {
         margin-bottom: 1.6rem;
         line-height: 3.2rem;
+        text-align: justify;
       }
 
       a {
         text-decoration: none;
         color: rgb(0, 102, 133);
+      }
+      ul {
+        margin-left: 3.2rem;
+
+        li {
+          margin-top: 1rem;
+        }
       }
     }
   }

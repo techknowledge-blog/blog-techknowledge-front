@@ -1,0 +1,27 @@
+<mat-card
+  class="main-card"
+  [routerLink]="['/posts/', mainPost?.slug]"
+  [class.mat-elevation-z0]="true"
+>
+  <div class="preview-image-container">
+    <img class="preview-image" [src]="mainPost?.previewImagePath" />
+  </div>
+  <div class="highlight-content-side">
+    <div class="date-tag-line">
+      <span>{{ mainPost?.category.slug }}</span>
+      <span>{{ formattedCreatedDate }}</span>
+    </div>
+    <mat-card-title>{{ mainPost?.title }}</mat-card-title>
+    <mat-card-content [innerHtml]="mainPost?.previewContent"></mat-card-content>
+    <section class="author-card-section">
+      <img
+        [src]="mainPost?.author.avatarPath"
+        alt="Avatar do criador do blog"
+      />
+      <div>
+        <span>{{ mainPost?.author.name }}</span>
+        <span>{{ mainPost?.author.function }}</span>
+      </div>
+    </section>
+  </div>
+</mat-card>

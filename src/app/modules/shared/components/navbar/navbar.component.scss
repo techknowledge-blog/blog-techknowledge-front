@@ -1,31 +1,149 @@
 @use "../../../../../style/variables.scss" as *;
+@use "../../../../../style/styles.scss" as *;
 
 nav {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-
-  .menu-options {
-    width: 50%;
+  div.container {
+    padding-top: 1.6rem;
+    width: 1200px;
+    margin: 0 auto;
+    height: 75px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    div.logo-container {
+      flex: 2;
+      img {
+        width: 240px;
+      }
+    }
 
     ul {
-      list-style-type: none;
       display: flex;
-      justify-content: space-around;
-      width: 100%;
-      a {
-        text-decoration: none;
-        color: $dark-dark;
-        font-size: 1.6rem;
-        padding: 1.6rem 1rem;
-        font-weight: 500;
-        transition: 0.3s;
+      justify-content: space-between;
+      flex: 1;
+      list-style-type: none;
 
-        &:hover {
-          color: $dark-medium;
-          font-weight: bold;
+      li {
+        a {
+          text-decoration: none;
+          color: $white;
+          font-size: 17px;
+          font-family: "Comfortaa";
+          transition: 0.3s;
+          font-weight: 900;
+
+          &:hover {
+            color: $grey-100;
+          }
+        }
+      }
+    }
+    div.mobile-menu-icon {
+      display: none;
+    }
+  }
+}
+
+div.mobile-menu {
+  z-index: 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    li {
+      list-style-type: none;
+      margin: 1.6rem 0;
+
+      a {
+        font-size: large;
+        font-weight: bold;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.top-down {
+  animation-name: topdown;
+  animation-duration: 0.3s;
+  height: 250px;
+}
+
+@keyframes topdown {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 250px;
+  }
+}
+
+.down-top {
+  animation-name: downtop;
+  animation-duration: 0.3s;
+  visibility: hidden;
+  height: 0;
+}
+
+@keyframes downtop {
+  0% {
+    visibility: hidden;
+    height: 250px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  nav {
+    div.container {
+      width: 100%;
+
+      ul {
+        li {
+          padding: 0 0.8rem;
+        }
+      }
+    }
+
+    div.mobile-menu-icon {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  nav {
+    div.container {
+      ul {
+        display: none;
+      }
+      div.mobile-menu-icon {
+        flex: 1;
+        display: block;
+        text-align: right;
+
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    div.container {
+      div.logo-container {
+        img {
+          width: 170px;
         }
       }
     }

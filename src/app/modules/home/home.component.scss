@@ -1,4 +1,14 @@
 main {
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
+
+  section {
+    margin: 4.8rem 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  main {
+    width: 100%;
+  }
 }
