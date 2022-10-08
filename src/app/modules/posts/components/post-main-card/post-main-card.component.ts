@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { getLongDateFormat } from 'src/app/modules/shared/utils/get-long-date-format.util';
+import { getLongDateFormat } from '../../../../modules/shared/utils/get-long-date-format.util';
 import IPost from '../../interfaces/post.interface';
 
 @Component({

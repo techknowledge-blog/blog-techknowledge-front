@@ -9,10 +9,11 @@ header {
     height: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 
     img {
-      width: 500px;
+      width: 320px;
     }
 
     .description {
@@ -22,6 +23,7 @@ header {
 
       span {
         font-size: 2rem;
+        text-align: center;
         display: block;
         color: $white;
         line-height: 3.2rem;
