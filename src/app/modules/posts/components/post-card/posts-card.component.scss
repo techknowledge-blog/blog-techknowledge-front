@@ -20,6 +20,11 @@ mat-card {
     align-items: center;
     transition: 0.1s;
   }
+  
+  mat-card-subtitle,
+  mat-card-content {
+    text-align: justify;
+  }
 
   mat-card-content,
   mat-card-subtitle,
@@ -107,7 +112,7 @@ mat-card {
 
   @media screen and (max-width: 890px) {
     mat-card-title {
-      margin: 1rem 0;
+      // margin: 1rem 0;
     }
 
     div.under-image-line {

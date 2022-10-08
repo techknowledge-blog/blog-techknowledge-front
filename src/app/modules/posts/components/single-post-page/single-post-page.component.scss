@@ -26,7 +26,6 @@ main {
     div.post-content {
       font-family: $roboto-regular;
       font-size: 1.8rem;
-      text-align: justify;
       color: $grey-700;
 
       h3 {
@@ -37,6 +36,7 @@ main {
       p {
         margin-bottom: 1.6rem;
         line-height: 3.2rem;
+        text-align: justify;
       }
 
       a {
