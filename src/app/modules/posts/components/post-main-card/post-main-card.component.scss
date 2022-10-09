@@ -69,26 +69,18 @@ mat-card.main-card {
 
   div.date-tag-line {
     align-items: center;
+    font-family: "Roboto-Regular", "Helvetica Neue", sans-serif;
+    font-size: 1.4rem;
 
     span:first-child {
-      font-size: 1.2rem;
       padding: 0.8rem;
-      font-family: "Roboto-Regular", "Helvetica Neue", sans-serif;
       background-color: #efefef;
       margin-right: 0.8rem;
     }
 
     span:last-child {
-      font-size: 1.4rem;
-      font-family: "Roboto-Regular", "Helvetica Neue", sans-serif;
       color: #8d8d99;
       font-weight: 900;
-    }
-  }
-
-  &:hover {
-    img.preview-image-container {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     }
   }
 
