@@ -1,3 +1,5 @@
+@use "../../../../../style/variables.scss" as *;
+
 nav {
   div.container {
     padding-top: 1.6rem;
@@ -24,14 +26,14 @@ nav {
       li {
         a {
           text-decoration: none;
-          color: #fff;
+          color: $white;
           font-size: 17px;
           font-family: "Comfortaa";
           transition: 0.3s;
           font-weight: 900;
 
           &:hover {
-            color: #e1e1e6;
+            color: $grey-100;
           }
         }
       }
@@ -57,7 +59,7 @@ div.mobile-menu {
       a {
         font-size: large;
         font-weight: bold;
-        color: #fff;
+        color: $white;
         text-decoration: none;
       }
     }

@@ -1,24 +1,31 @@
+@use "../../../../../style/variables.scss" as *;
+
 mat-card.main-card {
   padding: 0;
   display: flex;
   justify-content: space-around;
-  background-color: #f8f9fb;
+  background-color: $white-medium;
   outline: none;
 
   &:hover {
     cursor: pointer;
 
     mat-card-title {
-      color: #0c5eff;
+      color: $primary-dark;
     }
+  }
+
+  mat-card-subtitle,
+  mat-card-content {
+    text-align: justify;
   }
 
   mat-card-content,
   mat-card-subtitle,
   mat-card-title {
     margin-top: 1.6rem;
-    font-family: "Poppins-Bold", "Helvetica Neue", sans-serif;
-    color: #505059;
+    font-family: $poppins-bold;
+    color: $grey-500;
     line-height: 3rem;
   }
 
@@ -31,7 +38,7 @@ mat-card.main-card {
   }
 
   mat-card-content {
-    font-family: "Roboto-Regular", "Helvetica Neue", sans-serif;
+    font-family: $roboto-regular;
     font-size: 1.6rem;
     line-height: 2.4rem;
     height: 20rem;
@@ -49,30 +56,40 @@ mat-card.main-card {
     }
 
     div {
+      position: relative;
+
       span {
         display: block;
       }
 
       span:first-child {
-        font-family: "Poppins-Bold", "Helvetica Neue", sans-serif;
+        font-family: $poppins-bold;
       }
     }
   }
 
   div.date-tag-line {
     align-items: center;
-    font-family: "Roboto-Regular", "Helvetica Neue", sans-serif;
-    font-size: 1.4rem;
 
     span:first-child {
+      font-size: 1.2rem;
       padding: 0.8rem;
-      background-color: #efefef;
+      font-family: $roboto-regular;
+      background-color: $post-tag;
       margin-right: 0.8rem;
     }
 
     span:last-child {
-      color: #8d8d99;
+      font-size: 1.4rem;
+      font-family: $roboto-regular;
+      color: $grey-200;
       font-weight: 900;
+    }
+  }
+
+  &:hover {
+    img.preview-image-container {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     }
   }
 
@@ -110,7 +127,13 @@ mat-card.main-card {
 
     div.preview-image-container {
       margin: 0;
+    }
+  }
+}
 
+@media screen and (max-width: 734px) {
+  mat-card.main-card {
+    div.preview-image-container {
       img.preview-image {
         height: 252px;
       }
