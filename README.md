@@ -1,31 +1,85 @@
-# Blog Techknowledge
+![techknowledge](/src/assets/img/banner-techknowledge.png)
 
-O Blog [Techknowledge](https://blog-techknowledge-front.web.app/) construído com muito carinho para os desenvolvedores, de devs pra devs! Onde eu e minha amiga @leticiadia contamos sobre nossas experiências na área de tecnologia, assim como compartilhamos conteúdos sobre as tecnologias que ensinamos! Com o objetivo de compartilhar conhecimento!
+<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
+    <div>
+        <p style="font-weight: bold; font-size: 16px;">Link para acessar o blog:</p>
+    </div>
+    <div>
+        <a href="https://blog-techknowledge-front.web.app/" style="color: #0077B7; font-size: 16px;">TechKnoledge</a>
+    </div>
+</div>
+
+<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
+
+![Badge](https://img.shields.io/badge/Blog-Techknowledge-%230077B7?style=flat-square&logo=ghost)
+
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
+
+![Badge](https://img.shields.io/github/license/Mikkaiser/blog-techknowledge-front?style=flat-square)
+
+![GitHub release](https://img.shields.io/github/release/Mikkaiser/blog-techknowledge-front?style=flat-square)
+
+![GitHub contributors](https://img.shields.io/github/contributors/Mikkaiser/blog-techknowledge-front?style=flat-square)
+
+</div>
+
+## 🖼️ Preview
+
+![techknowledge](/src/assets/img/home-page-techknowledge.png)
+
+## 💻 Descrição
+
+<p>O Blog Techknowkledge é um projeto que tem como foco contribuir com a comunidade de desenvolvimento, contando sobre experiências, aprendizados, dinâmicas no ambiente de desenvolvimento e muito mais!</p>
+
+## 📖 Sobre TechKnowledge
+
+<p>
+    TechKnowledge surgiu a partir de uma necessidade que eu (Mikael) e a minha amiga Leticia vimos de compartilhar nossas experiências, tanto como competidores da Olimpíada do Conhecimento, quanto como desenvolvedores, demostrando quais problemas que encontramos no dia-a-dia e como resolvemos.
+</p>
+
+## 📝 Post's
+<p>Alguns de nossos posts, que foram postados no blog:</p>
+
+- <a href="https://blog-techknowledge-front.web.app/posts/techknowledge-ponto-zero">TechKnowledge 2.0</a>
+
+- <a href="https://blog-techknowledge-front.web.app/posts/olimpiada-do-conhecimento">Olimpíada do Conhecimento</a>
+
+- <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">Quem somos nós</a>
+
+- <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">"Faz funcionare depois melhora." Será mesmo?</a>
 
 
+## 📌 Tecnologias Utilizadas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+<p>As seguintes ferramentas foram usadas na construção do projeto:</p>
 
-## Development server
+- Angular, version: 14.0.0
+- Typescript, version: 4.7.2
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ⌨ Como usar?
 
-## Code scaffolding
+1. In this first part you will clone the repository:
+   ```bash
+       git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
+   ```
+2. Next you will enter the directory:
+   ```bash
+       cd blog-techknowledge-front
+   ```
+3. The next step is to install the dependencies:
+   ```bash
+       npm install
+   ```
+4. Run the application in development mode
+   ```bash
+        npm start
+   ```
+5. The server will start on port:4200 go to <http://localhost:4200>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🧑‍🚀🚀 Contribuição
 
-## Build
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 👨‍💻 👩‍💻 Autores
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p>Desenvolvido por Mikael Ribeiro e Leticia Dias</p>
