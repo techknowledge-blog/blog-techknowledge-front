@@ -78,7 +78,7 @@
 
 ## 🧑‍🚀🚀 Contribuição
 
-<p>Solicitações de pull são bem-vindas. Para grandes mudanças, abra um problema primeiro para discutir o que você gostaria de mudar.</p>
+<p>Solicitações de pull são bem-vindas. Para grandes mudanças, abra uma issue primeiro para discutir o que você gostaria de mudar.</p>
 
 ## 👨‍💻 👩‍💻 Autores
 
