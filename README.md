@@ -78,8 +78,8 @@
 
 ## 🧑‍🚀🚀 Contribuição
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+<p>Solicitações de pull são bem-vindas. Para grandes mudanças, abra um problema primeiro para discutir o que você gostaria de mudar.</p>
 
 ## 👨‍💻 👩‍💻 Autores
 
-<p>Desenvolvido por Mikael Ribeiro e Leticia Dias</p>
+<p>Desenvolvido por Mikael Ribeiro e Leticia Dias!</p>
