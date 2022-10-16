@@ -34,7 +34,7 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 
 <p>Alguns de nossos posts, que foram postados no blog:</p>
 
-- <a href="https://blog-techknowledge-front.web.app/posts/techknowledge-ponto-zero">TechKnowledge 2.0</a>
+- <a href="https://blog-techknowledge-front.web.app/posts/techknowledge-ponto-zero">TechKnowledge: Ponto Zero</a>
 
 - <a href="https://blog-techknowledge-front.web.app/posts/olimpiada-do-conhecimento">Olimpíada do Conhecimento</a>
 
@@ -71,16 +71,8 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 
 ## 🧑‍🚀🚀 Contribuição
 
-<<<<<<< HEAD
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## 👨‍💻 👩‍💻 Autores
-
-# <p>Desenvolvido por Mikael Ribeiro e Leticia Dias</p>
-
 <p>Solicitações de pull são bem-vindas. Para grandes mudanças, abra uma issue primeiro para discutir o que você gostaria de mudar.</p>
 
 ## 👨‍💻 👩‍💻 Autores
 
 <p>Desenvolvido por Mikael Ribeiro e Leticia Dias!</p>
->>>>>>> 5e3559334ca7d43584cb4c742396ee256f78f0bf
