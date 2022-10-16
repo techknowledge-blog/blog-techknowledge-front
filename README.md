@@ -1,27 +1,23 @@
 ![techknowledge](/src/assets/img/banner-techknowledge.png)
 
-<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
-    <div>
-        <p style="font-weight: bold; font-size: 16px;">Link para acessar o blog:</p>
-    </div>
-    <div>
-        <a href="https://blog-techknowledge-front.web.app/" style="color: #0077B7; font-size: 16px;">TechKnoledge</a>
-    </div>
+<div align="center">
+
+Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.app/)
+
 </div>
 
-<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
+<div align="center">
 
 ![Badge](https://img.shields.io/badge/Blog-Techknowledge-%230077B7?style=flat-square&logo=ghost)
-
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
-
 ![Badge](https://img.shields.io/github/license/Mikkaiser/blog-techknowledge-front?style=flat-square)
-
 ![GitHub release](https://img.shields.io/github/release/Mikkaiser/blog-techknowledge-front?style=flat-square)
-
 ![GitHub contributors](https://img.shields.io/github/contributors/Mikkaiser/blog-techknowledge-front?style=flat-square)
 
 </div>
+
+<!-- ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) -->
 
 ## 🖼️ Preview
 
