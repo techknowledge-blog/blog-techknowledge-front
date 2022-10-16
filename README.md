@@ -1,24 +1,17 @@
 ![techknowledge](/src/assets/img/banner-techknowledge.png)
 
-<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
-    <div>
-        <p style="font-weight: bold; font-size: 16px;">Link para acessar o blog:</p>
-    </div>
-    <div>
-        <a href="https://blog-techknowledge-front.web.app/" style="color: #0077B7; font-size: 16px;">TechKnoledge</a>
-    </div>
+<div align="center">
+
+Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.app/)
+
 </div>
 
-<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
+<div align="center">
 
 ![Badge](https://img.shields.io/badge/Blog-Techknowledge-%230077B7?style=flat-square&logo=ghost)
-
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
-
 ![Badge](https://img.shields.io/github/license/Mikkaiser/blog-techknowledge-front?style=flat-square)
-
 ![GitHub release](https://img.shields.io/github/release/Mikkaiser/blog-techknowledge-front?style=flat-square)
-
 ![GitHub contributors](https://img.shields.io/github/contributors/Mikkaiser/blog-techknowledge-front?style=flat-square)
 
 </div>
@@ -32,7 +25,6 @@
 <p>O Blog Techknowkledge é um projeto que tem como foco contribuir com a comunidade de desenvolvimento, contando sobre experiências, aprendizados, dinâmicas no ambiente de desenvolvimento e muito mais!</p>
 
 ## 📖 Sobre TechKnowledge
-
 <p>
     TechKnowledge surgiu a partir de uma necessidade que eu (Mikael) e a minha amiga Leticia vimos de compartilhar nossas experiências, tanto como competidores da Olimpíada do Conhecimento, quanto como desenvolvedores, demostrando quais problemas que encontramos no dia-a-dia e como resolvemos.
 </p>
@@ -78,8 +70,8 @@
 
 ## 🧑‍🚀🚀 Contribuição
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+<p>Solicitações de pull são bem-vindas. Para grandes mudanças, abra uma issue primeiro para discutir o que você gostaria de mudar.</p>
 
 ## 👨‍💻 👩‍💻 Autores
 
-<p>Desenvolvido por Mikael Ribeiro e Leticia Dias</p>
+<p>Desenvolvido por Mikael Ribeiro e Leticia Dias!</p>
