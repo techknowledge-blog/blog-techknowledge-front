@@ -16,9 +16,6 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 
 </div>
 
-<!-- ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) -->
-
 ## 🖼️ Preview
 
 ![techknowledge](/src/assets/img/home-page-techknowledge.png)
@@ -28,7 +25,6 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 <p>O Blog Techknowkledge é um projeto que tem como foco contribuir com a comunidade de desenvolvimento, contando sobre experiências, aprendizados, dinâmicas no ambiente de desenvolvimento e muito mais!</p>
 
 ## 📖 Sobre TechKnowledge
-
 <p>
     TechKnowledge surgiu a partir de uma necessidade que eu (Mikael) e a minha amiga Leticia vimos de compartilhar nossas experiências, tanto como competidores da Olimpíada do Conhecimento, quanto como desenvolvedores, demostrando quais problemas que encontramos no dia-a-dia e como resolvemos.
 </p>
