@@ -1,24 +1,17 @@
 ![techknowledge](/src/assets/img/banner-techknowledge.png)
 
-<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
-    <div>
-        <p style="font-weight: bold; font-size: 16px;">Link para acessar o blog:</p>
-    </div>
-    <div>
-        <a href="https://blog-techknowledge-front.web.app/" style="color: #0077B7; font-size: 16px;">TechKnoledge</a>
-    </div>
+<div align="center">
+
+Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.app/)
+
 </div>
 
-<div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
+<div align="center">
 
 ![Badge](https://img.shields.io/badge/Blog-Techknowledge-%230077B7?style=flat-square&logo=ghost)
-
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
-
 ![Badge](https://img.shields.io/github/license/Mikkaiser/blog-techknowledge-front?style=flat-square)
-
 ![GitHub release](https://img.shields.io/github/release/Mikkaiser/blog-techknowledge-front?style=flat-square)
-
 ![GitHub contributors](https://img.shields.io/github/contributors/Mikkaiser/blog-techknowledge-front?style=flat-square)
 
 </div>
@@ -38,6 +31,7 @@
 </p>
 
 ## 📝 Post's
+
 <p>Alguns de nossos posts, que foram postados no blog:</p>
 
 - <a href="https://blog-techknowledge-front.web.app/posts/techknowledge-ponto-zero">TechKnowledge 2.0</a>
@@ -47,7 +41,6 @@
 - <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">Quem somos nós</a>
 
 - <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">"Faz funcionare depois melhora." Será mesmo?</a>
-
 
 ## 📌 Tecnologias Utilizadas
 
@@ -78,8 +71,16 @@
 
 ## 🧑‍🚀🚀 Contribuição
 
+<<<<<<< HEAD
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## 👨‍💻 👩‍💻 Autores
 
-<p>Desenvolvido por Mikael Ribeiro e Leticia Dias</p>
+# <p>Desenvolvido por Mikael Ribeiro e Leticia Dias</p>
+
+<p>Solicitações de pull são bem-vindas. Para grandes mudanças, abra uma issue primeiro para discutir o que você gostaria de mudar.</p>
+
+## 👨‍💻 👩‍💻 Autores
+
+<p>Desenvolvido por Mikael Ribeiro e Leticia Dias!</p>
+>>>>>>> 5e3559334ca7d43584cb4c742396ee256f78f0bf
