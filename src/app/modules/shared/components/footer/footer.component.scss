@@ -17,6 +17,33 @@ footer {
     flex-direction: column;
     width: 1200px;
     padding: 3.2rem 0;
+
+    div.footer-info {
+      display: flex;
+      justify-content: space-between;
+
+      div.social-links {
+        ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            margin: 0 20px;
+            cursor: pointer;
+
+            i,
+            span {
+              font-size: 20px;
+              font-family: $poppins-bold;
+              color: white;
+              margin: 0 3px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .logo {
