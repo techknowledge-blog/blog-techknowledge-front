@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
 
   constructor(public dialog: MatDialog) {}
 
-  openDialog(): void {
+  openDialog(socialOption: string): void {
     const dialogRef = this.dialog.open(SocialDialogComponent, {
       width: '250px',
       data: { name: 'Mikkaiser', animal: 'MIkkaiser Animal' },

@@ -59,3 +59,41 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  footer {
+    div.content {
+      div.logo {
+        text-align: center;
+      }
+
+      div.footer-info {
+        flex-direction: column;
+
+        div.copyright {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 554px) {
+  footer {
+    div.content {
+      div.footer-info {
+        div.social-links {
+          ul {
+            display: block;
+            text-align: center;
+
+            li {
+              margin: 20px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
