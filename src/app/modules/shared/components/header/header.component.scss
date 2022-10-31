@@ -4,28 +4,55 @@ header {
   background-color: $primary-dark;
 
   div.container {
-    width: 1200px;
-    margin: 0 auto;
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    img {
-      width: 560px;
-    }
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+
+    padding-top: 2.4rem;
 
     .description {
       display: flex;
       flex-direction: column;
-      margin-top: 2.4rem;
-
       span {
-        font-size: 2rem;
         display: block;
+        max-width: 72rem;
+
+        font-family: $poppins-bold;
+        font-size: 3.2rem;
         color: $white;
-        line-height: 3.2rem;
-        font-family: $roboto-regular;
+        line-height: 5rem;
+      }
+    }
+
+    div.authors {
+      display: flex;
+      align-items: center;
+
+      padding: 2.4rem 0;
+
+      div.author {
+        display: flex;
+        align-items: center;
+
+        .author-image img {
+          height: 4.8rem;
+          border-radius: 50%;
+          border: 2px solid #57df92;
+        }
+
+        .author-description {
+          padding: 0.8rem 0 0 1.6rem;
+        }
+
+        .author-description p {
+          color: #fff;
+          font-weight: bold;
+          width: 66%;
+        }
       }
     }
   }
@@ -41,7 +68,7 @@ header {
   }
 }
 
-@media screen and (max-width: 823px) {
+@media screen and (max-width: 850px) {
   header {
     div.container {
       height: 250px;
@@ -57,17 +84,47 @@ header {
           line-height: 2.4rem;
         }
       }
+
+      div.authors {
+        div.author {
+          .author-image img {
+            width: 4.8rem;
+            height: 4.8rem;
+          }
+
+          .author-description p {
+            width: 93%;
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
 }
 
-@media screen and (max-width: 357px) {
+@media screen and (max-width: 450px) {
   header {
     div.container {
       height: auto;
       padding-bottom: 2.4rem;
       img {
         width: 230px;
+      }
+
+      div.authors {
+        flex-direction: column;
+        .author {
+          padding: 0.8rem 0;
+          .author-image img {
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+
+          .author-description p {
+            width: 100%;
+            font-size: 12px;
+          }
+        }
       }
     }
   }
