@@ -51,23 +51,23 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 
 ## ⌨ Como usar?
 
-1. In this first part you will clone the repository:
+1. Nesta primeira parte você irá clonar o repositório:
    ```bash
        git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
    ```
-2. Next you will enter the directory:
+2. Em seguida, você entrará no diretório:
    ```bash
        cd blog-techknowledge-front
    ```
-3. The next step is to install the dependencies:
+3. O próximo passo é instalar as dependências:
    ```bash
        npm install
    ```
-4. Run the application in development mode
+4. Execute a aplicação para o modo de desenvolvimento
    ```bash
         npm start
    ```
-5. The server will start on port:4200 go to <http://localhost:4200>
+5. O servidor iniciará na porta:4200 vá para <http://localhost:4200>
 
 ## 🧑‍🚀🚀 Contribuição
 
