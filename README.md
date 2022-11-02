@@ -25,7 +25,6 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 <p>O Blog Techknowkledge é um projeto que tem como foco contribuir com a comunidade de desenvolvimento, contando sobre experiências, aprendizados, dinâmicas no ambiente de desenvolvimento e muito mais!</p>
 
 ## 📖 Sobre TechKnowledge
-<<<<<<< HEAD
 
 <p>
     TechKnowledge surgiu a partir de uma necessidade que eu (Mikael) e a minha amiga Leticia vimos de compartilhar nossas experiências, tanto como competidores da Olimpíada do Conhecimento, quanto como desenvolvedores, demostrando quais problemas que encontramos no dia-a-dia e como resolvemos.
@@ -36,16 +35,6 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 <p>Alguns de nossos posts, que foram postados no blog:</p>
 
 - <a href="https://blog-techknowledge-front.web.app/posts/techknowledge-ponto-zero">TechKnowledge: Ponto Zero</a>
-=======
-<p>
-    TechKnowledge surgiu a partir de uma necessidade que eu (Mikael) e a minha amiga Leticia vimos de compartilhar nossas experiências, tanto como competidores da Olimpíada do Conhecimento, quanto como desenvolvedores, demostrando quais problemas que encontramos no dia-a-dia e como resolvemos.
-</p>
-
-## 📝 Post's
-<p>Alguns de nossos posts, que foram postados no blog:</p>
-
-- <a href="https://blog-techknowledge-front.web.app/posts/techknowledge-ponto-zero">TechKnowledge 2.0</a>
->>>>>>> 5e3559334ca7d43584cb4c742396ee256f78f0bf
 
 - <a href="https://blog-techknowledge-front.web.app/posts/olimpiada-do-conhecimento">Olimpíada do Conhecimento</a>
 
@@ -53,10 +42,6 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 
 - <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">"Faz funcionare depois melhora." Será mesmo?</a>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5e3559334ca7d43584cb4c742396ee256f78f0bf
 ## 📌 Tecnologias Utilizadas
 
 <p>As seguintes ferramentas foram usadas na construção do projeto:</p>
@@ -66,7 +51,6 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 
 ## ⌨ Como usar?
 
-<<<<<<< HEAD
 1. Nesta primeira parte você irá clonar o repositório:
    ```bash
        git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
@@ -84,25 +68,6 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
         npm start
    ```
 5. O servidor iniciará na porta:4200 vá para <http://localhost:4200>
-=======
-1. In this first part you will clone the repository:
-   ```bash
-       git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
-   ```
-2. Next you will enter the directory:
-   ```bash
-       cd blog-techknowledge-front
-   ```
-3. The next step is to install the dependencies:
-   ```bash
-       npm install
-   ```
-4. Run the application in development mode
-   ```bash
-        npm start
-   ```
-5. The server will start on port:4200 go to <http://localhost:4200>
->>>>>>> 5e3559334ca7d43584cb4c742396ee256f78f0bf
 
 ## 🧑‍🚀🚀 Contribuição
 
