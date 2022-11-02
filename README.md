@@ -25,12 +25,13 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 <p>O Blog Techknowkledge é um projeto que tem como foco contribuir com a comunidade de desenvolvimento, contando sobre experiências, aprendizados, dinâmicas no ambiente de desenvolvimento e muito mais!</p>
 
 ## 📖 Sobre TechKnowledge
+
 <p>
     TechKnowledge surgiu a partir de uma necessidade que eu (Mikael) e a minha amiga Leticia vimos de compartilhar nossas experiências, tanto como competidores da Olimpíada do Conhecimento, quanto como desenvolvedores, demostrando quais problemas que encontramos no dia-a-dia e como resolvemos.
 </p>
 
-
 ## 📝 Post's
+
 <p>Alguns de nossos posts, que foram postados no blog:</p>
 
 - <a href="https://blog-techknowledge-front.web.app/posts/techknowledge-ponto-zero">TechKnowledge: Ponto Zero</a>
@@ -40,6 +41,7 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 - <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">Quem somos nós</a>
 
 - <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">"Faz funcionare depois melhora." Será mesmo?</a>
+
 ## 📌 Tecnologias Utilizadas
 
 <p>As seguintes ferramentas foram usadas na construção do projeto:</p>
@@ -48,6 +50,7 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 - Typescript, version: 4.7.2
 
 ## ⌨ Como usar?
+
 1. Nesta primeira parte você irá clonar o repositório:
    ```bash
        git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
