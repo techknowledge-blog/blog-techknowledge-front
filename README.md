@@ -41,6 +41,11 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 - <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">Quem somos nós</a>
 
 - <a href="https://blog-techknowledge-front.web.app/posts/quem-somos-nos">"Faz funcionare depois melhora." Será mesmo?</a>
+  <<<<<<< HEAD
+
+=======
+
+> > > > > > > b4195bc6227c56feb38e38c8f51b9b5875b587b2
 
 ## 📌 Tecnologias Utilizadas
 
@@ -50,6 +55,8 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 - Typescript, version: 4.7.2
 
 ## ⌨ Como usar?
+
+<<<<<<< HEAD
 
 1. In this first part you will clone the repository:
    ```bash
@@ -67,7 +74,25 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
    ```bash
         npm start
    ```
-5. The server will start on port:4200 go to <http://localhost:4200>
+5. # The server will start on port:4200 go to <http://localhost:4200>
+6. Nesta primeira parte você irá clonar o repositório:
+   ```bash
+       git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
+   ```
+7. Em seguida, você entrará no diretório:
+   ```bash
+       cd blog-techknowledge-front
+   ```
+8. O próximo passo é instalar as dependências:
+   ```bash
+       npm install
+   ```
+9. Execute a aplicação para o modo de desenvolvimento
+   ```bash
+        npm start
+   ```
+10. O servidor iniciará na porta:4200 vá para <http://localhost:4200>
+    > > > > > > > b4195bc6227c56feb38e38c8f51b9b5875b587b2
 
 ## 🧑‍🚀🚀 Contribuição
 
