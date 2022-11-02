@@ -8,16 +8,19 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { DividerComponent } from './components/divider/divider.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FooterComponent } from './components/footer/footer.component';
 import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    NavbarComponent, 
-    HeaderComponent, 
-    DividerComponent, 
-    FooterComponent, 
-    UnderConstructionComponent
+    NavbarComponent,
+    HeaderComponent,
+    DividerComponent,
+    FooterComponent,
+    UnderConstructionComponent,
   ],
   imports: [
     CommonModule,
@@ -26,6 +29,9 @@ import { UnderConstructionComponent } from './components/under-construction/unde
     MatButtonModule,
     MatDividerModule,
     HttpClientModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
   exports: [
     NavbarComponent,
@@ -41,7 +47,7 @@ import { UnderConstructionComponent } from './components/under-construction/unde
 })
 export class SharedModule {
   /*
-  forRoot method to be called in AppModule, 
+  forRoot method to be called in AppModule,
   ensuring that the SharedModule providers are imported once
   */
 
