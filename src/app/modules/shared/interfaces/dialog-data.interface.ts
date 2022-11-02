@@ -1,4 +1,5 @@
 export interface DialogDataInterface {
-  animal: string;
-  name: string;
+  logoPath: string;
+  socialMediaName: string;
+  alternativeText: string;
 }
