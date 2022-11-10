@@ -22,6 +22,8 @@ export class FooterComponent implements OnInit {
           logoPath: '../../../../../assets/img/instagram.png',
           socialMediaName: 'Instagram',
           alternativeText: 'Logo do Instagram',
+          leticiaLink: 'https://www.instagram.com/startnowleticia/',
+          mikaelLink: 'https://www.instagram.com/musneyer/',
         };
         break;
 
@@ -30,6 +32,8 @@ export class FooterComponent implements OnInit {
           logoPath: '../../../../../assets/img/linkedin.png',
           socialMediaName: 'Linkedin',
           alternativeText: 'Logo do Linkedin',
+          leticiaLink: 'https://www.linkedin.com/in/leticia-dia/',
+          mikaelLink: 'https://www.linkedin.com/in/mikael-ribeiro/',
         };
         break;
 
@@ -38,6 +42,8 @@ export class FooterComponent implements OnInit {
           logoPath: '../../../../../assets/img/github.png',
           socialMediaName: 'Github',
           alternativeText: 'Logo do Github',
+          leticiaLink: 'https://github.com/leticiadia',
+          mikaelLink: 'https://github.com/Mikkaiser',
         };
         break;
     }
@@ -49,7 +55,7 @@ export class FooterComponent implements OnInit {
     const { alternativeText, socialMediaName, logoPath } = this.socialConfigs;
 
     const dialogRef = this.dialog.open(SocialDialogComponent, {
-      width: '250px',
+      width: '500px',
       data: { alternativeText, socialMediaName, logoPath },
     });
 

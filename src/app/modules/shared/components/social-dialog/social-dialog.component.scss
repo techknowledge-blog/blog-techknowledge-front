@@ -1,0 +1,69 @@
+@use "../../../../../style/variables.scss" as *;
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  div.logo-side {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 4rem;
+    }
+    strong.social-media-title {
+      font-size: 4rem;
+      font-family: $poppins-bold;
+      padding-left: 1.5rem;
+    }
+  }
+
+  div.content-side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+
+    div.author-content {
+      display: flex;
+      align-items: center;
+      margin-top: 2.5rem;
+
+      img {
+        width: 6rem;
+        border-radius: 50%;
+      }
+      a {
+        font-size: 2.4rem;
+        font-family: $poppins-bold;
+        padding-left: 1.5rem;
+        line-height: 3rem;
+        text-decoration: none;
+        color: $dark-black;
+        transition: 0.2s;
+
+        &:hover {
+          color: $primary-dark;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    div.content-side {
+      margin-left: 1rem;
+
+      div.author-content {
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    div.logo-side {
+      strong.social-media-title {
+        font-size: 3rem;
+      }
+    }
+  }
+}
