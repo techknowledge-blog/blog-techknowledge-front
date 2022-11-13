@@ -30,7 +30,7 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
     TechKnowledge surgiu a partir de uma necessidade que eu (Mikael) e a minha amiga Leticia vimos de compartilhar nossas experiências, tanto como competidores da Olimpíada do Conhecimento, quanto como desenvolvedores, demostrando quais problemas que encontramos no dia-a-dia e como resolvemos.
 </p>
 
-## 📝 Post's
+## 📝 Posts
 
 <p>Alguns de nossos posts, que foram postados no blog:</p>
 
@@ -52,20 +52,25 @@ Link para acessar o blog: [TechKnowledge](https://blog-techknowledge-front.web.a
 ## ⌨ Como usar?
 
 1. Nesta primeira parte você irá clonar o repositório:
+
    ```bash
-       git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
+   git clone https://github.com/Mikkaiser/blog-techknowledge-front.git
+
    ```
+
 2. Em seguida, você entrará no diretório:
    ```bash
-       cd blog-techknowledge-front
+   cd blog-techknowledge-front
    ```
 3. O próximo passo é instalar as dependências:
+
    ```bash
-       npm install
+   npm install
    ```
+
 4. Execute a aplicação para o modo de desenvolvimento
    ```bash
-        npm start
+   npm start
    ```
 5. O servidor iniciará na porta:4200 vá para <http://localhost:4200>
 

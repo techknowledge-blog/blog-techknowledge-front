@@ -13,6 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FooterComponent } from './components/footer/footer.component';
 import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 import { FormsModule } from '@angular/forms';
+import { SocialDialogComponent } from './components/social-dialog/social-dialog.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     DividerComponent,
     FooterComponent,
     UnderConstructionComponent,
+    SocialDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -37,6 +39,7 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     HeaderComponent,
     DividerComponent,
+    SocialDialogComponent,
     HttpClientModule,
     FooterComponent,
     UnderConstructionComponent,
