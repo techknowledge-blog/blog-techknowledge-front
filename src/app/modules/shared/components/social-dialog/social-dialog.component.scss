@@ -41,6 +41,7 @@ section {
         text-decoration: none;
         color: $dark-black;
         transition: 0.2s;
+        outline: none;
 
         &:hover {
           color: $primary-dark;

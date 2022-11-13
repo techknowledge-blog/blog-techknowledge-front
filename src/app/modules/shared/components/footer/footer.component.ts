@@ -52,11 +52,9 @@ export class FooterComponent implements OnInit {
   openDialog(socialOption: string): void {
     this.defineCorrectSocialMediaInfo(socialOption);
 
-    const { alternativeText, socialMediaName, logoPath } = this.socialConfigs;
-
     const dialogRef = this.dialog.open(SocialDialogComponent, {
       width: '500px',
-      data: { alternativeText, socialMediaName, logoPath },
+      data: this.socialConfigs,
     });
 
     dialogRef.afterClosed().subscribe((result) => {
