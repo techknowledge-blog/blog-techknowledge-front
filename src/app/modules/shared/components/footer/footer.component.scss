@@ -17,6 +17,38 @@ footer {
     flex-direction: column;
     width: 1200px;
     padding: 3.2rem 0;
+
+    div.footer-info {
+      display: flex;
+      justify-content: space-between;
+
+      div.social-links {
+        ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            margin: 0 20px;
+            cursor: pointer;
+
+            i,
+            button {
+              border: none;
+              background: none;
+
+              color: white;
+              font-size: 20px;
+              font-family: $poppins-bold;
+
+              margin: 0 3px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
   }
 
   .logo {
@@ -29,6 +61,44 @@ footer {
     padding: 0 2.4rem;
     div.content {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    div.content {
+      div.logo {
+        text-align: center;
+      }
+
+      div.footer-info {
+        flex-direction: column;
+
+        div.copyright {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 554px) {
+  footer {
+    div.content {
+      div.footer-info {
+        div.social-links {
+          ul {
+            display: block;
+            text-align: center;
+
+            li {
+              margin: 20px 0;
+            }
+          }
+        }
+      }
     }
   }
 }
