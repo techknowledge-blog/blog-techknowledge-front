@@ -34,11 +34,16 @@ footer {
             cursor: pointer;
 
             i,
-            span {
+            button {
+              border: none;
+              background: none;
+
+              color: white;
               font-size: 20px;
               font-family: $poppins-bold;
-              color: white;
+
               margin: 0 3px;
+              cursor: pointer;
             }
           }
         }
