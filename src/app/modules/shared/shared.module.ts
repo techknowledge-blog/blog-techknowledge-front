@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 import { FormsModule } from '@angular/forms';
 import { SocialDialogComponent } from './components/social-dialog/social-dialog.component';
+import { UnderConstructionDialogComponent } from './components/under-construction-dialog/under-construction-dialog.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SocialDialogComponent } from './components/social-dialog/social-dialog.
     FooterComponent,
     UnderConstructionComponent,
     SocialDialogComponent,
+    UnderConstructionDialogComponent,
   ],
   imports: [
     CommonModule,
