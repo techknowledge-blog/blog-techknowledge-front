@@ -1,4 +1,3 @@
-import { UnderConstructionComponent } from './../under-construction/under-construction.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { UnderConstructionDialogComponent } from '../under-construction-dialog/under-construction-dialog.component';
@@ -20,6 +19,8 @@ export class NavbarComponent implements OnInit {
   }
 
   openDialog(): void {
-    this.dialog.open(UnderConstructionDialogComponent);
+    this.dialog.open(UnderConstructionDialogComponent, {
+      width: '500px',
+    });
   }
 }

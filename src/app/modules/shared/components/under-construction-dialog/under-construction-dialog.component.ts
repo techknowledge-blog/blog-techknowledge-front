@@ -12,4 +12,8 @@ export class UnderConstructionDialogComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  onClose() {
+    this.dialogRef.close();
+  }
 }
