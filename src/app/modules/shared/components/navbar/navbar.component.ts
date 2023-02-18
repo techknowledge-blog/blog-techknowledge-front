@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { UnderConstructionDialogComponent } from '../under-construction-dialog/under-construction-dialog.component';
+import { InfoModalComponent } from '../info-modal/info-modal.component';
 
 @Component({
   selector: 'app-navbar',
@@ -19,8 +19,16 @@ export class NavbarComponent implements OnInit {
   }
 
   openDialog(): void {
-    this.dialog.open(UnderConstructionDialogComponent, {
+    this.dialog.open(InfoModalComponent, {
       width: '500px',
+      data: {
+        modalTitle: 'Mikkaiser here',
+        icon: 'warning',
+        modalDescription: 'Mikkaiser description',
+        positiveButtonMessage: 'MessageButtonOK',
+        negativeMessageButton: 'MessageButtonNotOkay',
+        hasNegativeButton: true,
+      },
     });
   }
 }

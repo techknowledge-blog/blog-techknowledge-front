@@ -13,7 +13,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { SocialDialogComponent } from './components/social-dialog/social-dialog.component';
-import { UnderConstructionDialogComponent } from './components/under-construction-dialog/under-construction-dialog.component';
+import { InfoModalComponent } from './components/info-modal/info-modal.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { UnderConstructionDialogComponent } from './components/under-constructio
     DividerComponent,
     FooterComponent,
     SocialDialogComponent,
-    UnderConstructionDialogComponent,
+    InfoModalComponent,
   ],
   imports: [
     CommonModule,
@@ -33,18 +34,21 @@ import { UnderConstructionDialogComponent } from './components/under-constructio
     HttpClientModule,
     MatDialogModule,
     MatFormFieldModule,
+    MatIconModule,
     FormsModule,
   ],
   exports: [
     NavbarComponent,
     HeaderComponent,
     DividerComponent,
+    InfoModalComponent,
     SocialDialogComponent,
     HttpClientModule,
     FooterComponent,
     MatCardModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
   ],
 })
 export class SharedModule {

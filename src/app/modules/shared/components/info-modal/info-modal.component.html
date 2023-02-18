@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="icon-side">
+    <div
+      [ngStyle]="{
+        backgroundColor: data.iconColor ? data.iconColor : warningLight
+      }"
+    >
+      <img
+        src="../../../../../assets/img/warning-outline-icon.svg"
+        alt="Ícone de aviso em amarelo escuro, rodeado por uma superfície amarelo-clara"
+      />
+    </div>
+  </div>
+  <div class="content-side">
+    <h3>{{ data.modalTitle }}</h3>
+    <span>
+      {{ data.modalDescription }}
+    </span>
+    <section class="buttons">
+      <button mat-raised-button *ngIf="data.hasNegativeButton">
+        {{
+          data.negativeButtonMessage ? data.negativeButtonMessage : "Cancelar"
+        }}
+      </button>
+      <button mat-raised-button>
+        {{ data.positiveButtonMessage ? data.positiveButtonMessage : "Ok" }}
+      </button>
+    </section>
+  </div>
+</div>
