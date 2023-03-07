@@ -2,13 +2,14 @@
 
 div.container {
   display: flex;
+  gap: 1.5rem;
 
   div.icon-side {
     div {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0.3rem;
+      padding: 0.5rem;
       border-radius: 50px;
       height: 30px;
       width: 30px;
@@ -17,6 +18,30 @@ div.container {
         width: 2.5rem;
         position: relative;
         bottom: 2px;
+      }
+    }
+  }
+
+  div.content-side {
+    font-family: $roboto-regular;
+
+    h3 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    span {
+      color: $grey-500;
+    }
+
+    section.buttons {
+      display: flex;
+      justify-content: right;
+      margin-top: 1.3rem;
+      gap: 1.5rem;
+
+      button {
+        font-family: $roboto-regular;
+        font-weight: bold;
       }
     }
   }

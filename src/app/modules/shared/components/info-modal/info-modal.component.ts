@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ButtonTypeColorEnum } from '../../enums/button-type.enum';
 import { InfoModalInterface } from '../../interfaces/info-modal.interface';
 
 @Component({
@@ -13,10 +14,17 @@ export class InfoModalComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: InfoModalInterface
   ) {}
 
-  techknowledgedMedium: string = '#4f8aff';
-  warningLight: string = '#FFD09B';
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if(this.data.theme == ButtonTypeColorEnum.WARNING)
+      this.data.iconPath = 'warning-outline-icon.svg';
+
+    if(this.data.theme == ButtonTypeColorEnum.WARNING)
+      this.data.iconPath = 'warning-outline-icon.svg';
+
+    if(this.data.theme == ButtonTypeColorEnum.WARNING)
+      this.data.iconPath = 'warning-outline-icon.svg';
+  }
 
   onClose() {
     this.dialogRef.close();

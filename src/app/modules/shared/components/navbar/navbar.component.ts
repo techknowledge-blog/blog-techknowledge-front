@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ButtonTypeColorEnum } from '../../enums/button-type.enum';
 import { InfoModalComponent } from '../info-modal/info-modal.component';
 
 @Component({
@@ -23,11 +24,10 @@ export class NavbarComponent implements OnInit {
       width: '500px',
       data: {
         modalTitle: 'Mikkaiser here',
-        icon: 'warning',
-        modalDescription: 'Mikkaiser description',
-        positiveButtonMessage: 'MessageButtonOK',
-        negativeMessageButton: 'MessageButtonNotOkay',
-        hasNegativeButton: true,
+        modalDescription:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type',
+        positiveButtonMessage: 'Fechar',
+        theme: ButtonTypeColorEnum.NEGATIVE
       },
     });
   }

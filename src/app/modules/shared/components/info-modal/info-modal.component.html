@@ -2,7 +2,7 @@
   <div class="icon-side">
     <div
       [ngStyle]="{
-        backgroundColor: data.iconColor ? data.iconColor : warningLight
+        backgroundColor: data.theme
       }"
     >
       <img
@@ -17,12 +17,22 @@
       {{ data.modalDescription }}
     </span>
     <section class="buttons">
-      <button mat-raised-button *ngIf="data.hasNegativeButton">
+      <button mat-raised-button 
+        *ngIf="data.negativeButtonMessage"
+        [ngStyle]="{
+          backgroundColor: data.theme
+        }"
+      >
         {{
           data.negativeButtonMessage ? data.negativeButtonMessage : "Cancelar"
         }}
       </button>
-      <button mat-raised-button>
+      <button mat-raised-button
+        [ngStyle]="{
+          backgroundColor: data.theme,
+          color: 'black'
+        }"
+      >
         {{ data.positiveButtonMessage ? data.positiveButtonMessage : "Ok" }}
       </button>
     </section>
