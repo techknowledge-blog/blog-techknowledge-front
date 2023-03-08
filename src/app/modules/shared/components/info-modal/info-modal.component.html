@@ -32,6 +32,7 @@
           backgroundColor: data.theme,
           color: grey700Color
         }"
+        (click)="onClose()"
       >
         {{ data.positiveButtonMessage ? data.positiveButtonMessage : "Ok" }}
       </button>
