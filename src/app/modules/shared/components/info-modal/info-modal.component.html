@@ -6,7 +6,7 @@
       }"
     >
       <img
-        src="../../../../../assets/img/warning-outline-icon.svg"
+        [src]="'../../../../../assets/img/' + data.iconPath"
         alt="Ícone de aviso em amarelo escuro, rodeado por uma superfície amarelo-clara"
       />
     </div>
@@ -20,7 +20,7 @@
       <button mat-raised-button 
         *ngIf="data.negativeButtonMessage"
         [ngStyle]="{
-          backgroundColor: data.theme
+          color: grey700Color
         }"
       >
         {{
@@ -30,7 +30,7 @@
       <button mat-raised-button
         [ngStyle]="{
           backgroundColor: data.theme,
-          color: 'black'
+          color: grey700Color
         }"
       >
         {{ data.positiveButtonMessage ? data.positiveButtonMessage : "Ok" }}

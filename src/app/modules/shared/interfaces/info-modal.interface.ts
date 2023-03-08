@@ -7,6 +7,5 @@ export interface InfoModalInterface {
   modalDescription: string;
   positiveButtonMessage?: string;
   negativeButtonMessage?: string;
-  hasNegativeButton?: boolean;
   theme: ButtonTypeColorEnum;
 }
