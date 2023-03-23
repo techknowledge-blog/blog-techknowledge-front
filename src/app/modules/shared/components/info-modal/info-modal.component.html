@@ -12,12 +12,13 @@
     </div>
   </div>
   <div class="content-side">
-    <h3>{{ data.modalTitle }}</h3>
+    <h2>{{ data.modalTitle }}</h2>
     <span>
       {{ data.modalDescription }}
     </span>
     <section class="buttons">
-      <button mat-raised-button 
+      <button
+        mat-raised-button
         *ngIf="data.negativeButtonMessage"
         [ngStyle]="{
           color: grey700Color
@@ -27,7 +28,8 @@
           data.negativeButtonMessage ? data.negativeButtonMessage : "Cancelar"
         }}
       </button>
-      <button mat-raised-button
+      <button
+        mat-raised-button
         [ngStyle]="{
           backgroundColor: data.theme,
           color: grey700Color

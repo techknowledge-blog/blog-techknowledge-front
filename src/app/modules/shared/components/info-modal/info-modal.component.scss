@@ -15,7 +15,7 @@ div.container {
       width: 30px;
 
       img {
-        width: 2.5rem;
+        width: 2.8rem;
       }
     }
   }
@@ -23,12 +23,13 @@ div.container {
   div.content-side {
     font-family: $roboto-regular;
 
-    h3 {
+    h2 {
       font-weight: 600;
       margin-bottom: 1rem;
     }
     span {
       color: $grey-500;
+      font-size: 1.6rem;
     }
 
     section.buttons {
