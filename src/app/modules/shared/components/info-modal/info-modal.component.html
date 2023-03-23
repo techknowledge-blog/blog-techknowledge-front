@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="icon-side">
+    <div
+      [ngStyle]="{
+        backgroundColor: data.theme
+      }"
+    >
+      <img
+        [src]="'../../../../../assets/img/' + data.iconPath"
+        alt="Ícone de aviso em amarelo escuro, rodeado por uma superfície amarelo-clara"
+      />
+    </div>
+  </div>
+  <div class="content-side">
+    <h2>{{ data.modalTitle }}</h2>
+    <span>
+      {{ data.modalDescription }}
+    </span>
+    <section class="buttons">
+      <button
+        mat-raised-button
+        *ngIf="data.negativeButtonMessage"
+        [ngStyle]="{
+          color: grey700Color
+        }"
+      >
+        {{
+          data.negativeButtonMessage ? data.negativeButtonMessage : "Cancelar"
+        }}
+      </button>
+      <button
+        mat-raised-button
+        [ngStyle]="{
+          backgroundColor: data.theme,
+          color: grey700Color
+        }"
+        (click)="onClose()"
+      >
+        {{ data.positiveButtonMessage ? data.positiveButtonMessage : "Ok" }}
+      </button>
+    </section>
+  </div>
+</div>
