@@ -1,7 +1,27 @@
+@use "../../../../../style/variables.scss" as *;
+
 main {
-  .container {
+  div.container {
     border: 1px solid red;
-    width: 102.4rem;
+    width: 120rem;
     margin: 0 auto;
+
+    section.post-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.8rem;
+
+      div.post-card {
+        background: $white;
+
+        div.post-card-header {
+          h2 {
+            font-size: 2.4rem;
+            font-family: $poppins-bold;
+            color: $grey-700;
+          }
+        }
+      }
+    }
   }
 }
