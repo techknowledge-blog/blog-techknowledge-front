@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
         modalDescription:
           'Este espaço ainda está em construção! Você não perde por esperar!',
         positiveButtonMessage: 'Fechar',
-        theme: ButtonTypeColorEnum.WARNING
+        theme: ButtonTypeColorEnum.WARNING,
       },
     });
   }
