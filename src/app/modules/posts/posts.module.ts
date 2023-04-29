@@ -1,3 +1,4 @@
+import { MatDividerModule } from '@angular/material/divider';
 import { PostsService } from './posts.service';
 import { PostsRoutingModule } from './posts-routing.module';
 import { PostsCardRenderComponent } from './components/posts-card-render/posts-card-render.component';
@@ -20,7 +21,7 @@ import { PostMainCardComponent } from './components/post-main-card/post-main-car
     PostMainCardComponent,
   ],
   providers: [PostsService],
-  imports: [CommonModule, SharedModule, PostsRoutingModule],
+  imports: [CommonModule, SharedModule, PostsRoutingModule, MatDividerModule],
   exports: [PostsComponent, PostCardComponent, PostsCardRenderComponent],
 })
 export class PostsModule {}

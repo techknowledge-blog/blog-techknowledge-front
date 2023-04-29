@@ -1,0 +1,13 @@
+<main>
+  <section class="post-list">
+    <div [routerLink]="post.slug" class="post-card" *ngFor="let post of posts">
+      <div class="post-card-header">
+        <h2>{{ post.title }}</h2>
+        <p [innerHTML]="post.previewContent"></p>
+      </div>
+      <div class="post-card-footer">
+        <a [routerLink]="post.slug">Ler mais >>></a>
+      </div>
+    </div>
+  </section>
+</main>

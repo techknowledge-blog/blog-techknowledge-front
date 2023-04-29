@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'environments/environment';
 import { Observable } from 'rxjs';
 import IPost from './interfaces/post.interface';
 
@@ -9,14 +10,16 @@ import IPost from './interfaces/post.interface';
 export class PostsService {
   constructor(private http: HttpClient) {}
 
-  private API_URL = 'http://localhost:3000';
-
   getFeaturedPosts(): Observable<IPost[]> {
-    return this.http.get<IPost[]>(this.API_URL + '/posts');
+    return this.http.get<IPost[]>(environment.apiUrl + '/posts');
   }
 
   //while data is mocked, the return need to be a array with the target object
   getPostBySlug(slug: string): Observable<IPost[]> {
-    return this.http.get<IPost[]>(this.API_URL + '/posts?slug=' + slug);
+    return this.http.get<IPost[]>(environment.apiUrl + '/posts?slug=' + slug);
+  }
+
+  getAllPublishedPosts(): Observable<IPost[]> {
+    return this.http.get<IPost[]>(environment.apiUrl + '/feed');
   }
 }
