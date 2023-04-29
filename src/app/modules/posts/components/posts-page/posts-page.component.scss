@@ -1,27 +1,82 @@
 @use "../../../../../style/variables.scss" as *;
 
 main {
-  div.container {
-    border: 1px solid red;
-    width: 120rem;
-    margin: 0 auto;
+  width: 120rem;
+  margin: 0 auto;
+  section.post-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+    margin: 5rem 0;
 
-    section.post-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4.8rem;
+    div.post-card {
+      display: flex;
+      flex-direction: column;
+      background: $white;
+      padding: 2.5rem 3.7rem;
+      min-height: 26.5rem;
+      transition: 0.2s;
+      border-radius: 1rem;
 
-      div.post-card {
-        background: $white;
+      &:hover {
+        cursor: pointer;
 
         div.post-card-header {
           h2 {
-            font-size: 2.4rem;
-            font-family: $poppins-bold;
-            color: $grey-500;
+            color: $primary-dark;
           }
         }
       }
+
+      div.post-card-header {
+        h2 {
+          font-size: 2.4rem;
+          font-family: $poppins-bold;
+          color: $grey-500;
+        }
+
+        p {
+          font-size: 1.8rem;
+          font-family: $roboto-regular;
+          color: $grey-500;
+          line-height: 2.4rem;
+        }
+      }
+
+      div.post-card-footer {
+        flex: 1;
+        display: flex;
+
+        a {
+          align-self: flex-end;
+          color: $primary-medium;
+          font-size: 1.6rem;
+          font-family: $poppins-bold;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 100%;
+
+    section.post-list {
+      margin: 5rem 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    section.post-list {
+      grid-template-columns: 1fr;
     }
   }
 }
